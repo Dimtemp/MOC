@@ -1,3 +1,4 @@
+# This script executes some of the cumbersome activities during lab 6 of the 20745 training
 $UserName = 'Adatum\Administrator'
 $LocalUserName = '.\Administrator'
 $SecurePassword = (ConvertTo-Securestring –asplaintext –force 'Pa55w.rd')
