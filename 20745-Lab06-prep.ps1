@@ -1,9 +1,9 @@
 # This script executes some of the cumbersome activities during lab 6 of the 20745 training
 $UserName = 'Adatum\Administrator'
 $LocalUserName = '.\Administrator'
-$SecurePassword = (ConvertTo-Securestring –asplaintext –force 'Pa55w.rd')
-$Credential1 = New-Object -TypeName System.Management.Automation.PSCredential  -ArgumentList $UserName,$SecurePassword
-$Credential2 = New-Object -TypeName System.Management.Automation.PSCredential  -ArgumentList $LocalUserName,$SecurePassword
+$SecurePassword = (ConvertTo-Securestring –AsPlaintext –Force 'Pa55w.rd')
+$Credential1 = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $UserName, $SecurePassword
+$Credential2 = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $LocalUserName, $SecurePassword
 New-ADGroup -Name 'VMM-NC-Mgmt' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Domain Admins'
 New-ADGroup -Name 'VMM-NC-Clients' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
