@@ -62,7 +62,7 @@ Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Domain Admins'
 New-ADGroup -Name 'VMM-NC-Clients' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 New-ADUser -Name $NCUserName -AccountPassword $SecurePassword -ChangePasswordAtLogon $false -Enabled $true -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Clients' -Members $NCUserName
-New-SCRunAsAccount -Name $LocalUserName -Credential $LocalCred -NoValidation
+New-SCRunAsAccount -Name 'Run As Local Admin' -Credential $LocalCred -NoValidation
 New-SCRunAsAccount -Name 'Run As NC Client' -Credential $NCCred
 New-SelfSignedCertificate -KeyUsageProperty All -Provider 'Microsoft Strong Cryptographic Provider' -FriendlyName 'AdatumNC' -DnsName @('NC-VM01.adatum.com')
 mkdir \\LON-SVR3\VMMLibrary\NC\NCCertificate.cr
