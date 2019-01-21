@@ -1,6 +1,7 @@
 <#
 This script executes some of the cumbersome activities during lab 6 of the 20745 training
-required: VMM PowerShell Module, execute script with domain admin and VMM admin credentials
+required: VMM PowerShell Module
+Execute this script with domain admin and VMM admin credentials
 #>
 
 # Install-WindowsFeature RSAT*
@@ -60,6 +61,8 @@ Add-SCVMHost $SVR_name2 -VMHostGroup 'London Hosts 2' -RunAsynchronously -Creden
 # Active Directory
 New-ADGroup -Name 'VMM-NC-Mgmt' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Domain Admins'
+Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'ADATUM\Administrator'
+Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Administrator'
 New-ADGroup -Name 'VMM-NC-Clients' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 New-ADUser -Name $NCUserName -AccountPassword $SecurePassword -ChangePasswordAtLogon $false -Enabled $true -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Clients' -Members $NCUserName
@@ -68,11 +71,36 @@ Add-ADGroupMember -Identity 'VMM-NC-Clients' -Members $NCUserName
 New-SCRunAsAccount -Name 'Run As Local Admin' -Credential $LocalCred -NoValidation
 New-SCRunAsAccount -Name 'Run As NC Client' -Credential $NCCred
 
-# certificate
-$CertListing = Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -match 'NC-VM01'
-if ($CertListing.count -gt 0) { $CertListing | ForEach-Object { Remove-Item $_.PSPath } }
-New-SelfSignedCertificate -KeyUsageProperty All -Provider 'Microsoft Strong Cryptographic Provider' -FriendlyName 'AdatumNC' -DnsName @('NC-VM01.adatum.com')
-
 # VMM Library folders
 mkdir \\LON-SVR3\VMMLibrary\NC\NCCertificate.cr
 mkdir \\LON-SVR3\VMMLibrary\NC\TrustedRootCertificate.cr
+
+# certificate
+$CertListing = Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -match 'NC-VM01'
+if ($CertListing.count -gt 0) { $CertListing | ForEach-Object { Remove-Item $_.PSPath -Confirm } }
+New-SelfSignedCertificate -KeyUsageProperty All -Provider 'Microsoft Strong Cryptographic Provider' -FriendlyName 'AdatumNC' -DnsName @('NC-VM01.adatum.com')
+
+$Cert = Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -match 'NC-VM01'
+$Cert | Export-Certificate    -FilePath '\\LON-SVR3\VMMLibrary\NC\NCCertificate.cr\NC-VM01.der'
+$Cert | Export-PfxCertificate -FilePath '\\LON-SVR3\VMMLibrary\NC\ServerCertificate.cr\NC-VM01.pfx' -Password $SecurePassword 
+
+break
+
+# ServerUrl=https://nc-vm01.adatum.com/;ServiceName=Network_Controller_Deployment_v1.0
+
+
+
+# Associate SVR2 NIC with Management network + IP Pool, SVR1 nog uitwerken
+
+# Get Host 'LON-SVR2.Adatum.com'
+$vmHost = Get-SCVMHost -ID "26176f3a-33c2-41ac-abbe-704672acd614"
+
+# Get Host Network Adapter 'Microsoft Hyper-V Network Adapter'
+$vmHostNetworkAdapter = Get-SCVMHostNetworkAdapter -ID "d004f473-d23a-40c4-bf31-02dc90f98110"
+Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -Description "" -AvailableForPlacement $true -UsedForManagement $true -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48"
+
+# Get Logical Network 'Management'
+$logicalNetwork = Get-SCLogicalNetwork -ID "00b0924d-4bb2-4b19-9a15-fb357458361d"
+Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48" -AddOrSetLogicalNetwork $logicalNetwork
+
+Set-SCVMHost -VMHost $vmHost -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48" -RunAsynchronously -NumaSpanningEnabled $true
