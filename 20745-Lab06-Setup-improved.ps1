@@ -4,7 +4,7 @@ required: VMM PowerShell Module
 Execute this script with domain admin and VMM admin credentials
 #>
 
-# Install-WindowsFeature RSAT*
+Install-WindowsFeature RSAT-AD-PowerShell, RSAT-Clustering-PowerShell, RSAT-Hyper-V-Tools
 
 # part 1: Lab06-Setup.ps1 from Allfiles
 
