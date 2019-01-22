@@ -4,7 +4,8 @@ required: VMM PowerShell Module
 Execute this script with domain admin and VMM admin credentials
 #>
 
-Install-WindowsFeature RSAT-AD-PowerShell, RSAT-Clustering-PowerShell, RSAT-Hyper-V-Tools
+# Install-WindowsFeature RSAT-AD-PowerShell, RSAT-Clustering-PowerShell, RSAT-Hyper-V-Tools
+Install-WindowsFeature RSAT-ADDS-Tools
 
 # part 1: Lab06-Setup.ps1 from Allfiles
 
@@ -59,13 +60,19 @@ Add-SCVMHost $SVR_name2 -VMHostGroup 'London Hosts 2' -RunAsynchronously -Creden
 # part 2: time-saving commands that would be performed manually during the lab
 
 # Active Directory
+
+# delete nc-vm# accounts from AD
+Get-ADComputer -Filter * | Where-Object name -match 'nc-vm*' | Remove-ADObject -Recursive
+# Get-ADObject -Filter *
+
 New-ADGroup -Name 'VMM-NC-Mgmt' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Domain Admins'
-Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'ADATUM\Administrator'
 Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Administrator'
+
 New-ADGroup -Name 'VMM-NC-Clients' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
-New-ADUser -Name $NCUserName -AccountPassword $SecurePassword -ChangePasswordAtLogon $false -Enabled $true -Path 'OU=IT,DC=Adatum,DC=com'
+New-ADUser -Name $NCUserName -AccountPassword $SecurePassword -ChangePasswordAtLogon $false -Enabled $true -PasswordNeverExpires $true -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Clients' -Members $NCUserName
+
 
 # VMM Run As accounts
 New-SCRunAsAccount -Name 'Run As Local Admin' -Credential $LocalCred -NoValidation
@@ -84,23 +91,23 @@ $Cert = Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -match 'NC-VM
 $Cert | Export-Certificate    -FilePath '\\LON-SVR3\VMMLibrary\NC\NCCertificate.cr\NC-VM01.der'
 $Cert | Export-PfxCertificate -FilePath '\\LON-SVR3\VMMLibrary\NC\ServerCertificate.cr\NC-VM01.pfx' -Password $SecurePassword 
 
-break
+
+
+# Associate SVR1+2 NIC with Management network + IP Pool
+'LON-SVR1', 'LON-SVR2' | ForEach-Object {
+
+    $vmHost = Get-SCVMHost | Where ComputerName -EQ $_  # Get-SCVMHost -ID "26176f3a-33c2-41ac-abbe-704672acd614"
+
+    # Get Host Network Adapter 'Microsoft Hyper-V Network Adapter'
+    $vmHostNetworkAdapter = Get-SCVMHostNetworkAdapter -VMHost $_ | Where-Object ConnectionName -eq 'Ethernet'
+    Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -Description "" -AvailableForPlacement $true -UsedForManagement $true
+
+    # Get Logical Network 'Management'
+    $logicalNetwork = Get-SCLogicalNetwork | where name -eq Management
+    Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -AddOrSetLogicalNetwork $logicalNetwork
+
+    Set-SCVMHost -VMHost $vmHost -RunAsynchronously -NumaSpanningEnabled $true
+}
+
 
 # ServerUrl=https://nc-vm01.adatum.com/;ServiceName=Network_Controller_Deployment_v1.0
-
-
-
-# Associate SVR2 NIC with Management network + IP Pool, SVR1 nog uitwerken
-
-# Get Host 'LON-SVR2.Adatum.com'
-$vmHost = Get-SCVMHost -ID "26176f3a-33c2-41ac-abbe-704672acd614"
-
-# Get Host Network Adapter 'Microsoft Hyper-V Network Adapter'
-$vmHostNetworkAdapter = Get-SCVMHostNetworkAdapter -ID "d004f473-d23a-40c4-bf31-02dc90f98110"
-Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -Description "" -AvailableForPlacement $true -UsedForManagement $true -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48"
-
-# Get Logical Network 'Management'
-$logicalNetwork = Get-SCLogicalNetwork -ID "00b0924d-4bb2-4b19-9a15-fb357458361d"
-Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $vmHostNetworkAdapter -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48" -AddOrSetLogicalNetwork $logicalNetwork
-
-Set-SCVMHost -VMHost $vmHost -JobGroup "f504882a-466c-4b3d-a32f-c02a62c9ad48" -RunAsynchronously -NumaSpanningEnabled $true
