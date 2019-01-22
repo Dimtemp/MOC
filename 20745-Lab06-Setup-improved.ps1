@@ -61,9 +61,7 @@ Add-SCVMHost $SVR_name2 -VMHostGroup 'London Hosts 2' -RunAsynchronously -Creden
 
 # Active Directory
 
-# delete nc-vm# accounts from AD
 Get-ADComputer -Filter * | Where-Object name -match 'nc-vm*' | Remove-ADObject -Recursive
-# Get-ADObject -Filter *
 
 New-ADGroup -Name 'VMM-NC-Mgmt' -GroupScope DomainLocal -Path 'OU=IT,DC=Adatum,DC=com'
 Add-ADGroupMember -Identity 'VMM-NC-Mgmt' -Members 'Domain Admins'
@@ -78,9 +76,11 @@ Add-ADGroupMember -Identity 'VMM-NC-Clients' -Members $NCUserName
 New-SCRunAsAccount -Name 'Run As Local Admin' -Credential $LocalCred -NoValidation
 New-SCRunAsAccount -Name 'Run As NC Client' -Credential $NCCred
 
+
 # VMM Library folders
 mkdir \\LON-SVR3\VMMLibrary\NC\NCCertificate.cr
 mkdir \\LON-SVR3\VMMLibrary\NC\TrustedRootCertificate.cr
+
 
 # certificate
 $CertListing = Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -match 'NC-VM01'
@@ -109,5 +109,10 @@ $Cert | Export-PfxCertificate -FilePath '\\LON-SVR3\VMMLibrary\NC\ServerCertific
     Set-SCVMHost -VMHost $vmHost -RunAsynchronously -NumaSpanningEnabled $true
 }
 
+# refresh library
+Get-SCLibraryShare | Read-SCLibraryShare
+
+
+# continue the lab exercise with Lab 6A, Exercise 2, Task 3: Import the Network Controller template
 
 # ServerUrl=https://nc-vm01.adatum.com/;ServiceName=Network_Controller_Deployment_v1.0
