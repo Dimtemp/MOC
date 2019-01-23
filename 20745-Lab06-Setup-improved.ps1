@@ -115,4 +115,10 @@ Get-SCLibraryShare | Read-SCLibraryShare
 
 # continue the lab exercise with Lab 6A, Exercise 2, Task 3: Import the Network Controller template
 
+
+# if no VMs exist on LON-SVR2, run this command on LON-SVR2:
+Install-WindowsFeature RSAT-Hyper-V-Tools
+New-VMSwitch -Name 'Internal Network' -SwitchType Internal
+Get-ChildItem -Path D:\ -Recurse -Filter '*.vmcx' | foreach { Import-VM -Path $_.FullName }
+
 # ServerUrl=https://nc-vm01.adatum.com/;ServiceName=Network_Controller_Deployment_v1.0
