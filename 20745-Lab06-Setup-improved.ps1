@@ -1,11 +1,12 @@
 <#
 This script executes some of the cumbersome activities during lab 6 of the 20745 training
-required: VMM PowerShell Module
+required: PowerShell Modules for VMM and Active Directory
 Execute this script with domain admin and VMM admin credentials
+Remember to verify memory on LON-SVR1: 8GB Ram or more is optimal
 #>
 
 # Install-WindowsFeature RSAT-AD-PowerShell, RSAT-Clustering-PowerShell, RSAT-Hyper-V-Tools
-Install-WindowsFeature RSAT-ADDS-Tools
+Install-WindowsFeature RSAT-ADDS-Tools, RSAT-AD-PowerShell
 
 # part 1: Lab06-Setup.ps1 from Allfiles
 
@@ -117,8 +118,10 @@ Get-SCLibraryShare | Read-SCLibraryShare
 
 
 # if no VMs exist on LON-SVR2, run this command on LON-SVR2:
+<#
 Install-WindowsFeature RSAT-Hyper-V-Tools
 New-VMSwitch -Name 'Internal Network' -SwitchType Internal
 Get-ChildItem -Path D:\ -Recurse -Filter '*.vmcx' | foreach { Import-VM -Path $_.FullName }
+#>
 
 # ServerUrl=https://nc-vm01.adatum.com/;ServiceName=Network_Controller_Deployment_v1.0
