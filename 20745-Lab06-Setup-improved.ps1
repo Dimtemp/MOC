@@ -35,7 +35,7 @@ Invoke-Command -ComputerName LON-SVR3 {
 
 # create VMMRunas account
 New-SCRunAsAccount -Credential $DomainCred -Name 'Adatum\VMMRunas' -Description 'Adatum\VMMRunas'
-$RunAsAccount = Get-SCRunAsAccount -Name 'Adatum\VMMRunas'
+$RunAsAccount = Get-SCRunAsAccount -Name 'Adatum\VMMRunas' | Select-Object -First 1
 
 # create library objects
 Add-SCLibraryShare -JobGroup 'faeddae9-7d3f-40f9-8fbf-6ff433ccaf2e' -SharePath "\\$SVR_name_host\Base"
