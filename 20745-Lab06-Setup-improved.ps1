@@ -5,8 +5,7 @@ Execute this script with domain admin and VMM admin credentials
 Remember to verify memory on LON-SVR1: 8GB Ram or more is optimal
 #>
 
-# Install-WindowsFeature RSAT-AD-PowerShell, RSAT-Clustering-PowerShell, RSAT-Hyper-V-Tools
-Install-WindowsFeature RSAT-ADDS-Tools, RSAT-AD-PowerShell
+Install-WindowsFeature RSAT-ADDS-Tools, RSAT-AD-PowerShell, RSAT-Hyper-V-Tools   # RSAT-Clustering-PowerShell
 
 # part 1: Lab06-Setup.ps1 from Allfiles
 
