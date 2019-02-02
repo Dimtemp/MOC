@@ -5,7 +5,10 @@ Execute this script with domain admin and VMM admin credentials
 Remember to verify memory on LON-SVR1: 8GB Ram or more is optimal
 #>
 
+# part 1: preparation
 Install-WindowsFeature RSAT-ADDS-Tools, RSAT-AD-PowerShell, RSAT-Hyper-V-Tools   # RSAT-Clustering-PowerShell
+Install-Module Dimmo   # contains Start-MOCLab command
+Start-MOCLab   # starts VMs according to input
 
 # part 1: Lab06-Setup.ps1 from Allfiles
 
