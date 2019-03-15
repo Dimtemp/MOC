@@ -66,4 +66,4 @@ Get-VM | Where-Object name -match img | Out-GridView -OutputMode Multiple | Stop
     }
 }
 
-New-VMsToDemoMulticasting -NewVMBaseName test
+New-VMsToDemoMulticasting
