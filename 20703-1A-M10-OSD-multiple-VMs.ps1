@@ -20,7 +20,7 @@ param(
   [string]$CfgServerName = '20703-1A-LON-CFG-B'
   )
 
-Get-VM | Where-Object state -eq 'running' | Out-GridView -OutputMode Multiple -Title 'Please select VM's to save, or press cancel' | Save-VM
+Get-VM | Where-Object state -eq 'running' | Out-GridView -OutputMode Multiple -Title 'Please select VMs to save, or press cancel' | Save-VM
 
 $CfgVM = Get-VM | where name -match $CfgServerName | Get-VMNetworkAdapter
 $CfgSwitch = Get-VMSwitch -Name $CfgVM.SwitchName
