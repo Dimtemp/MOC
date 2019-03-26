@@ -1,3 +1,5 @@
+-- more info: https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/encryption-hierarchy
+
 -- Prepare the Demo directory
 USE master
 EXEC xp_create_subdir 'C:\Demo'
