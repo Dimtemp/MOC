@@ -11,8 +11,8 @@ CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'DEK_Certificate'
 BACKUP CERTIFICATE MyServerCert TO FILE = 'C:\Demo\MyServerCert.cer' -- ENCRYPTION BY PASSWORD='Password3'
 
 -- Create two databases, one not encrypted, one encrypted
-CREATE DATABASE Sales    ON ( NAME = Sales_dat,    FILENAME = 'C:\Demo\Salesdat.mdf' )
-CREATE DATABASE SalesTDE ON ( NAME = SalesTDE_dat, FILENAME = 'C:\Demo\SalesTDEdat.mdf' )
+CREATE DATABASE Sales    ON ( NAME = Sales_dat,    FILENAME = 'C:\Demo\Sales_dat.mdf' )
+CREATE DATABASE SalesTDE ON ( NAME = SalesTDE_dat, FILENAME = 'C:\Demo\SalesTDE_dat.mdf' )
 
 -- fill with data
 USE Sales
