@@ -1,0 +1,12 @@
+Log in op de Hyper-V Host server met RDP
+Sluit eventueel alle schermen van VM's die open staan
+Open Server Manager
+Klik Tools, Routing and Remote Access
+Let op! Klik NIET Remote Access Management, maar de optie twee items daaronder: Routing and Remote Access
+Let op! Als je niet de optie Routing and Remote Access hebt zit je waarschijnlijk niet op de goede server te werken. Zorg ervoor dat je de RDP verbing opzet naar de host server en dat je dit NIET uitvoert op een VM
+Rechtsklik de servernaam (WIN-<nogwat>) en kies 'setup routing and remote access'
+Kies voor NAT.
+Selecteer de interface met het 10.x.x.x (DHCP) adres. Als deze interface niet verschijnt, klik dan cancel en herhaal de laatste twee stappen.
+Maak de wizard af met alle default instellingen.
+Open de web browser, bezoek google.com en verifieer de internet verbinding.
+Open een VM, open de web browser, bezoek google.com en verifieer de internet verbinding.
