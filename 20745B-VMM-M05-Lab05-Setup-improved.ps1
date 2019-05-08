@@ -29,7 +29,7 @@ New-SCVMHostGroup -VMMServer $SVR_name_VMM -Name "London Hosts 2"
 # Create LON-SYSPREP VM on LON-HOST1 and copy answer file
 
 $Extracted = "\\LON-HOST1\Base\"
-$Drive = ((Hyper-V\Get-VM $SVR_name_DC).Path).Substring(0,3)   # "C:\" correction
+$Drive = ((Hyper-V\Get-VM *LON-DC1).Path).Substring(0,3)   # "C:\" correction
 $VM_Path = $Drive + "VMs\LON-SYSPREP"
 $VHD_Path = $Drive + "VMs\LON-SYSPREP\LON-SYSPREP.vhd"
 $VHD_Base = $Extracted + "Base17C-WS16-1607.vhd"
