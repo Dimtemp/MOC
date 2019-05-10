@@ -40,6 +40,7 @@
 - ZRS: Zone-redundant storage: synchronous replica, three copies in 2 datacenters, replicated to secondary facility, block blobs only
 - GRS: Geo-redundant storage: async repl to secondary region, predefined pair, 6 copies in total
 - RA-GRS: Read-Acces: GRS with secondary read
+
 egress targets for the secondary location are identical to those for the primary location.
 
 
