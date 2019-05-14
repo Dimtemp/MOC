@@ -38,7 +38,9 @@
 - https://Azure.microsoft.com: frontpage
 - https://portal.azure.com: primary management interface
 - https://manage.windowsazure.com: classic Azure management interface
-- https://azure.microsoft.com/en-us/status/
+- https://azure.microsoft.com/en-us/status/: Azure status
+- https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
+- https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
 - https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 ### Azure service URI's
 - cloudapp.net: VM
