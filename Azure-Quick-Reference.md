@@ -38,6 +38,7 @@
 - Azure.microsoft.com: frontpage
 - portal.azure.com: primary management interface
 - manage.windowsazure.com: classic Azure management interface
+- https://azure.microsoft.com/en-us/status/
 - cloudapp.net: VM
 - azurwebsites.net: website
 - azurestorage.azurewebsites.net
