@@ -34,11 +34,13 @@
   - Azure Cosmos DB configured with multiple regions as writable endpoints
 
 
-## Azure URLs (services only, no references to docs)
-- Azure.microsoft.com: frontpage
-- portal.azure.com: primary management interface
-- manage.windowsazure.com: classic Azure management interface
+## Azure resources on the web
+- https://Azure.microsoft.com: frontpage
+- https://portal.azure.com: primary management interface
+- https://manage.windowsazure.com: classic Azure management interface
 - https://azure.microsoft.com/en-us/status/
+- https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
+### Azure service URI's
 - cloudapp.net: VM
 - azurwebsites.net: website
 - azurestorage.azurewebsites.net
@@ -49,7 +51,6 @@
   - database.windows.net: SQL
 - onmicrosoft.com: Active Directory
 - trafficmanager.net: Traffic Manager
-- resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 
 
 ## Azure VM Sizes
