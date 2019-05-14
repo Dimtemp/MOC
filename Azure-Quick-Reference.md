@@ -1,4 +1,4 @@
-## Availability
+## Azure Availability
 - 99%, ca 4 days per year
   - Storage account cool access tier for write requests
 - 99.9%, ca 8 hours per year
@@ -32,44 +32,41 @@
   - Azure Cosmos DB configured with multiple regions as writable endpoints
 
 
-## Azure URLs
-- Azure.microsoft.com: algemene webpage, vooral presales
-- portal.azure.com: nieuwe portal
-- manage.windowsazure.com: bedieningspaneel oud
-- cloudapp.net   VM
-- azurwebsites.net   website
+## Azure URLs (services only, no references to docs)
+- Azure.microsoft.com: frontpage
+- portal.azure.com: primary management interface
+- manage.windowsazure.com: classic Azure management interface
+- cloudapp.net: VM
+- azurwebsites.net: website
 - azurestorage.azurewebsites.net
-- windows.net
-  - core.windows.net         storage
-  - blob.core.windows.net    storage
-  - file.core.windows.net    file share
-  - database.windows.net   SQL
-- onmicrosoft.com   AD
-- trafficmanager.net
-- resources.azure.com
-  soort van online ARM JSON editor?
+  - blob.core.windows.net: blob storage
+  - file.core.windows.net: file share
+  - table.core.windows.net: table storage
+  - queue.core.windows.net: queue storage
+  - database.windows.net: SQL
+- onmicrosoft.com: Active Directory
+- trafficmanager.net: Traffic Manager
+- resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 
 
-## VM Sizes
-- A basic
-- B burstable, economical
-- F compute
-- D general, Faster CPUs and local Hyper-V host SSD (temporary disk), Dv2 series: 35% faster CPU than D-series
-- E memory optimized
-- G compute, large workload, up to 448 GB of RAM and 64 data disks
-- M compute - in-memory workloads
-- L storage optimized, low-latency
-- H high-performance computing
-- NC/NV compute and graphics
-- ND AI, PX40 GPU
+## Azure VM Sizes
+Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
+- A Basic, classic
+- B Burstable, economical
+- D General, Faster CPUs and local Hyper-V host SSD (temporary disk), Dv2 series: 35% faster CPU than D-series
+- E Memory optimized
+- F Compute optimized
+- G Large workload, up to 448 GB of RAM and 64 data disks
+- H High-performance computing
+- L Storage optimized, low-latency
+- M In-memory workloads
+- N Deep learning, graphic rendering, video editing
 
 
-## Storage
+## Azure Storage
+### Replication
 - LRS: Locally redundant storage: synchronous replica, three copies in 1 datacenter
 - ZRS: Zone-redundant storage: synchronous replica, three copies in 2 datacenters, replicated to secondary facility, block blobs only
 - GRS: Geo-redundant storage: async repl to secondary region, predefined pair, 6 copies in total
 - RA-GRS: Read-Acces: GRS with secondary read
-
-egress targets for the secondary location are identical to those for the primary location.
-
 
