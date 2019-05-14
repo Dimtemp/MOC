@@ -1,4 +1,6 @@
 ## Azure Availability
+- https://azure.microsoft.com/en-us/support/legal/sla/summary/
+- https://azure.microsoft.com/en-us/support/legal/sla/
 - 99%, ca 4 days per year
   - Storage account cool access tier for write requests
 - 99.9%, ca 8 hours per year
