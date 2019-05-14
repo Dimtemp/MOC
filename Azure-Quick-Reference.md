@@ -1,6 +1,10 @@
 ## Availability
-- 99%, ca 4 days per year: storage account cool access tier
-- 99.9%, ca 8 hours per year: application gateway, most services, RA-GRS Cool access read requests
+- 99%, ca 4 days per year
+  - storage account cool access tier
+- 99.9%, ca 8 hours per year
+  - most services
+  - RA-GRS Cool access read requests
+  - application gateway
 - 99.95% ca 4 hours per year
   - API mgmt
   - App svc (not free or shared tiers)
