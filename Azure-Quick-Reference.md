@@ -1,6 +1,28 @@
 ## Availability
-- 99.9%, ca 8 hour per year: application gateway
-- 99.99%, ca 1 hour per year
+- 99%, ca 4 days per year: storage account cool access tier
+- 99.9%, ca 8 hours per year: application gateway, most services, RA-GRS Cool access read requests
+- 99.95% ca 4 hours per year
+  - API mgmt
+  - App svc (not free or shared tiers)
+  - Application gateway
+  - Azure firewall
+  - Azure Databricks
+  - VM in availability set with 2+ instances
+  - ExpressRoute
+  - Azure Functions (ex Consumption Plans)
+  - Machine Learning Request Response Service API transactions
+  - Virtual WAN
+  - VPN Gateway (Standard+, not Basic)
+- 99.99%, less than 1 hour per year
+  - DDoS Protection
+  - Event Grid
+  - Load Balancer
+  - Azure SQL DB (Basic tier also), Cosmos DB, MySQL, PostgreSQL
+  - SAP HANA on Azure Large Instances
+  - Storage: RA-GRS Hot access tier read requests
+  - Traffic Manager
+- 99.999%
+  - Azure Cosmos DB. Multiple Azure regions as writable endpoints for a Database Account
 
 
 ## Azure URLs
