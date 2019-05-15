@@ -40,6 +40,11 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
 - https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
 - https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
+- https://azureprice.net/ Azure VM Comparison
+- https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
+- http://www.azurespeed.com/ Azure Latency Test
+
+
 ### Azure service URI's
 - cloudapp.net: VM
 - azurwebsites.net: website
