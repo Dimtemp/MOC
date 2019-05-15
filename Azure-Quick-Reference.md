@@ -1,10 +1,21 @@
 ## Azure Storage
 
+### Access Tier
+Defines the availability.
+- Hot: up to 99.99% availability
+- Cool: up to 99.9% availability
+- Archive, unspecified availability, can take a day for data retrievals, not available through Azure portal
+
 ### Replication
 - LRS: Locally redundant storage: synchronous replica, three copies in 1 datacenter
 - ZRS: Zone-redundant storage: synchronous replica, three copies in 2 datacenters, replicated to secondary facility, block blobs only
 - GRS: Geo-redundant storage: async repl to secondary region, predefined pair, 6 copies in total
-- RA-GRS: Read-Acces: GRS with secondary read
+- RA-GRS: Read-Acces: GRS with readable replica
+
+### Storage Account Kind
+- Blob: blob only, not file/table/queue storage, hot + cool access tiers, only LRS/GRS/RA-GRs replication
+- v1: no configurable access tiers, only LRS/GRS/RA-GRs replication
+- v2: all available replication configurations, all available access tiers
 
 
 ## Azure VM Sizes
