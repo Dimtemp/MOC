@@ -37,9 +37,9 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://portal.azure.com: primary management interface
 - https://manage.windowsazure.com: classic Azure management interface
 - https://azure.microsoft.com/en-us/status/: Azure status
+- https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 - https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
 - https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
-- https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 - https://azureprice.net/ Azure VM Comparison
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
 - http://www.azurespeed.com/ Azure Latency Test
