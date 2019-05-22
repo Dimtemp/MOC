@@ -4,12 +4,6 @@ It also contains all commands for Module 5 Lab, Exercise 1.
 Run this command from the HOST server.
 #>
 
-$Username = 'ADATUM\Administator'
-$Username = 'Administator'
-$InsecurePassword = 'Pa55w.rd1'
-$SecurePassword = ConvertTo-SecureString $InsecurePassword -AsPlainText -Force
-$Credentials = New-Object System.Management.Automation.PSCredential ($Username, $SecurePassword)
-
 Get-VM | Stop-VM -TurnOff
 Get-VM | Get-VMSnapshot | Restore-VMSnapshot
 Get-VM | Set-VMProcessor -Count 2   # setup/prov duurt lang met 1 core!
