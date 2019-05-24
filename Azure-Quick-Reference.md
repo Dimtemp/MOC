@@ -34,14 +34,15 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 ## Azure resources on the web
 ### Microsoft
-- https://Azure.microsoft.com: frontpage
-- https://portal.azure.com: primary management interface
-- https://manage.windowsazure.com: classic Azure management interface
+- https://azure.microsoft.com: frontpage
+- https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ Learn Azure in a Month of Lunches - free ebook
 - https://azure.microsoft.com/en-us/status/: Azure status
+- https://portal.azure.com: primary management interface
 - https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 - https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
+- https://github.com/Azure APIs, SDKs and open source projects from Microsoft Azure
 - https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
-- https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ Learn Azure in a Month of Lunches - free ebook
+- https://github.com/mspnp Microsoft patterns & practices
 
 ### Third party
 - https://azureprice.net/ Azure VM Comparison
