@@ -33,6 +33,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 
 ## Azure resources on the web
+### Microsoft
 - https://Azure.microsoft.com: frontpage
 - https://portal.azure.com: primary management interface
 - https://manage.windowsazure.com: classic Azure management interface
@@ -40,12 +41,15 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 - https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
 - https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
+- https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ Learn Azure in a Month of Lunches - free ebook
+
+### Third party
 - https://azureprice.net/ Azure VM Comparison
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
 - http://www.azurespeed.com/ Azure Latency Test
 
-
 ### Azure service URI's
+- onmicrosoft.com: Active Directory
 - cloudapp.net: VM
 - azurwebsites.net: website
 - azurestorage.azurewebsites.net
@@ -54,7 +58,6 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
   - table.core.windows.net: table storage
   - queue.core.windows.net: queue storage
   - database.windows.net: SQL
-- onmicrosoft.com: Active Directory
 - trafficmanager.net: Traffic Manager
 
 
