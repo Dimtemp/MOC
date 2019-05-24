@@ -1,4 +1,3 @@
-
 # run this on LON-SVR2
 
 Install-WindowsFeature RSAT-ADDS
