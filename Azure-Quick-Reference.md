@@ -43,11 +43,12 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
 - https://github.com/mspnp Microsoft patterns & practices
 
-### Free ebooks and whitepapers
+### Free ebooks and whitepapers (by year of release)
 - https://azure.microsoft.com/en-us/resources/azure-for-architects/ free ebook 2019
+- https://azure.microsoft.com/mediahandler/files/resourcefiles/security-best-practices-for-azure-solutions/Azure%20Security%20Best%20Practices.pdf - free whitepaper 2019
 - https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ free ebook 2018
+- https://azure.microsoft.com/en-us/campaigns/developer-guide/ - free ebook 2017
 - https://blogs.msdn.microsoft.com/microsoft_press/2016/09/01/free-ebook-microsoft-azure-essentials-fundamentals-of-azure-second-edition/ free ebook 2016
-- https://azure.microsoft.com/mediahandler/files/resourcefiles/security-best-practices-for-azure-solutions/Azure%20Security%20Best%20Practices.pdf - free whitepaper
 
 
 ### Third party
