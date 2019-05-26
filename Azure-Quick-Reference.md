@@ -35,8 +35,9 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 ## Azure resources on the web
 ### Microsoft
 - https://azure.microsoft.com: frontpage
-- https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ free ebook
-- https://azure.microsoft.com/en-us/resources/azure-for-architects/ free ebook
+- https://azure.microsoft.com/en-us/resources/azure-for-architects/ free ebook 2019
+- https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/ free ebook 2018
+- https://blogs.msdn.microsoft.com/microsoft_press/2016/09/01/free-ebook-microsoft-azure-essentials-fundamentals-of-azure-second-edition/ free ebook 2016
 - https://azure.microsoft.com/en-us/status/: Azure status
 - https://portal.azure.com: primary management interface
 - https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
