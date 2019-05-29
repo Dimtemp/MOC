@@ -34,13 +34,15 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 ## Azure resources on the web
 ### Microsoft
-- https://azure.microsoft.com: frontpage
-- https://azure.microsoft.com/en-us/status/: Azure status
-- https://portal.azure.com: primary management interface
-- https://resources.azure.com: Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
-- https://github.com/MicrosoftDocs/azure-docs: Microsoft Azure Documentation
+- https://azure.microsoft.com Azure frontpage
+- https://azure.microsoft.com/en-us/status/ Azure status
+- https://azure.microsoft.com/en-us/pricing/calculator/ Azure Pricing Calculator
+- https://azure.microsoft.com/en-us/pricing/tco/calculator/ Azure Total Cost of Ownership (TCO) Calculator
+- https://portal.azure.com primary Azure management interface
+- https://resources.azure.com Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
+- https://docs.microsoft.com/en-us/azure/ Microsoft Azure Documentation
 - https://github.com/Azure APIs, SDKs and open source projects from Microsoft Azure
-- https://github.com/Azure/azure-quickstart-templates: Azure Resource Manager QuickStart Templates
+- https://github.com/Azure/azure-quickstart-templates Azure Resource Manager QuickStart Templates
 - https://github.com/mspnp Microsoft patterns & practices
 
 ### Free ebooks and whitepapers (by year of release)
