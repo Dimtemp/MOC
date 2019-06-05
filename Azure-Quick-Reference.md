@@ -72,6 +72,11 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
   - database.windows.net: SQL
 - trafficmanager.net: Traffic Manager
 
+### Training and Learning
+- https://www.pluralsight.com/partners/microsoft/azure Pluralsight and Microsoft have partnered to help become an expert in Azure. With skill assessments and over 130 courses across three Azure roles, you can focus your time on understanding your strengths and skill gaps and learn Azure as quickly as possible.
+- https://www.microsoft.com/handsonlabs Get hands-on with cloud technologies from Microsoft. Practice with the latest cloud products and services in a live environment and advance your cloud skills for free.
+- https://docs.microsoft.com/en-us/learn/azure/ Unlock your cloud skills in minutes.
+
 
 ## Azure Availability
 - https://azure.microsoft.com/en-us/support/legal/sla/summary/
