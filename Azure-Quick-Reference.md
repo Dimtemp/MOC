@@ -41,6 +41,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://portal.azure.com primary Azure management interface
 - https://resources.azure.com Azure Resource Explorer, interact with Azure Resource Management APIs, JSON editor
 - https://docs.microsoft.com/en-us/azure/ Microsoft Azure Documentation
+- https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions Naming rules and restrictions for Azure resources and a baseline set of recommendations for naming conventions
 - https://github.com/Azure APIs, SDKs and open source projects from Microsoft Azure
 - https://github.com/Azure/azure-quickstart-templates Azure Resource Manager QuickStart Templates
 - https://github.com/mspnp Microsoft patterns & practices
