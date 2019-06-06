@@ -1,7 +1,7 @@
 # Remove AAD
 1. Azure Portal
-..1. adsync account: verify: is it Global admin?
-..1. If not: create new global admin
+    - adsync account: verify: is it Global admin?
+    - If not: create new global admin
 1. Windows computer
   - Start PowerShell
   - install-module msonline
