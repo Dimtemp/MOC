@@ -32,6 +32,21 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - N Deep learning, graphic rendering, video editing
 
 
+## Azure Networking
+### Popular ports
+- TCP/22 SSH
+- TCP/UDP/53 DNS
+- TCP/80 HTTP
+- TCP/443 HTTPS
+- TCP/UDP/445 SMB, Azure Storage account
+- TCP/UDP/389 LDAP
+- TCP/UDP/636 LDAP/SSL
+- TCP/1433 Azure SQL DB / TDS
+- TCP/UDP/3389 RDP
+- TCP/5985 WinRM
+- TCP/5986 WinRM
+
+
 ## Azure resources on the web
 ### Microsoft
 - https://azure.microsoft.com Azure frontpage
