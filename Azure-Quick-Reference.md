@@ -87,6 +87,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
   - queue.core.windows.net: queue storage
   - database.windows.net: SQL
 - trafficmanager.net: Traffic Manager
+- documents.azure.com: Cosmos DB
 
 ### Training and Learning
 - https://www.pluralsight.com/partners/microsoft/azure Pluralsight and Microsoft have partnered to help become an expert in Azure. With skill assessments and over 130 courses across three Azure roles, you can focus your time on understanding your strengths and skill gaps and learn Azure as quickly as possible.
