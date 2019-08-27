@@ -1,3 +1,10 @@
+Record Cosmos DB primary key here: _______________________________
+Record Cosmos DB URL here: _______________________________________
+Record Azure URL here: ___________________________________________
+Record Azure Search Query Key here: ______________________________
+
+
+
 New Item
 {
     "firstName": "Suzanne",
