@@ -1,7 +1,8 @@
-Record Cosmos DB primary key here: _______________________________
-Record Cosmos DB URL here: _______________________________________
-Record Azure URL here: ___________________________________________
-Record Azure Search Query Key here: ______________________________
+Prep
+- Record Cosmos DB primary key here: _______________________________
+- Record Cosmos DB URL here: _______________________________________
+- Record Azure URL here: ___________________________________________
+- Record Azure Search Query Key here: ______________________________
 
 
 
