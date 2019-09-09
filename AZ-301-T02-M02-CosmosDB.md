@@ -6,13 +6,13 @@ Prep
 
 
 
-New Item
+1. New Item
 {
     "firstName": "Suzanne",
     "lastName": "Oneal",
     "company": "Microsoft"
 }
-New item (2 more, with unique fieldnames, see lab)
+1. New item (2 more, with unique fieldnames, see lab)
 
 SELECT * FROM c
 
