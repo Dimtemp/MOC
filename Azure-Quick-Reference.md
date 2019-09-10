@@ -89,6 +89,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - trafficmanager.net: Traffic Manager
 - documents.azure.com: Cosmos DB
 - vault.azure.net: Azure Key vault
+- servicebus.windows.net: Azure Service Bus
 
 
 ### Training and Learning
