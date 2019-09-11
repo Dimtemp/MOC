@@ -1,4 +1,4 @@
-# once:
+# once
 ```console
 npm install -g @mspnp/azure-building-blocks
 git clone https://github.com/mspnp/template-building-blocks.git
