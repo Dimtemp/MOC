@@ -48,6 +48,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 
 ## Azure resources on the web
+
 ### Microsoft
 - https://azure.microsoft.com Azure frontpage
 - https://azure.microsoft.com/en-us/status/ Azure status
@@ -61,6 +62,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://github.com/Azure/azure-quickstart-templates Azure Resource Manager QuickStart Templates
 - https://github.com/mspnp Microsoft patterns & practices
 
+
 ### Free ebooks and whitepapers (by year of release)
 - https://gallery.technet.microsoft.com/Inside-the-Operations-2928e342 free ebook 2019
 - https://azure.microsoft.com/en-us/resources/azure-for-architects/ free ebook 2019
@@ -73,19 +75,20 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 ### Third party
 - https://azureprice.net/ Azure VM Comparison
+- http://azurestorage.azurewebsites.net Azure Storage web explorer
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
 - http://www.azurespeed.com/ Azure Latency Test
+
 
 ### Azure service URI's
 - onmicrosoft.com: Active Directory
 - cloudapp.net: VM
 - azurwebsites.net: website
-- azurestorage.azurewebsites.net
-  - blob.core.windows.net: blob storage
-  - file.core.windows.net: file share
-  - table.core.windows.net: table storage
-  - queue.core.windows.net: queue storage
-  - database.windows.net: SQL
+- blob.core.windows.net: blob storage
+- file.core.windows.net: file share
+- table.core.windows.net: table storage
+- queue.core.windows.net: queue storage
+- database.windows.net: SQL
 - trafficmanager.net: Traffic Manager
 - documents.azure.com: Cosmos DB
 - vault.azure.net: Azure Key vault
