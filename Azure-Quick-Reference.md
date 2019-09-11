@@ -44,7 +44,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - TCP/1433 Azure SQL DB / TDS
 - TCP/UDP/3389 RDP
 - TCP/5985 WinRM
-- TCP/5986 WinRM
+- TCP/5986 WinRM HTTPS
 
 
 ## Azure resources on the web
@@ -85,7 +85,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
   - file.core.windows.net: file share
   - table.core.windows.net: table storage
   - queue.core.windows.net: queue storage
-  - database.windows.net: SQL
+- database.windows.net: SQL
 - trafficmanager.net: Traffic Manager
 - documents.azure.com: Cosmos DB
 - vault.azure.net: Azure Key vault
