@@ -4,4 +4,3 @@
 Get-AzResourceGroup |
 Out-GridView -Title 'select resource groups to remove' -OutputMode Multiple |
 Remove-AzResourceGroup -force
-# foreach { Remove-AzResourceGroup -Name $_.ResourceGroupName -force }
