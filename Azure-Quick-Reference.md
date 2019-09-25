@@ -83,7 +83,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 ### Azure service URI's
 - onmicrosoft.com: Active Directory
 - cloudapp.net: VM
-- azurwebsites.net: website
+- azurewebsites.net: website
 - blob.core.windows.net: blob storage
 - file.core.windows.net: file share
 - table.core.windows.net: table storage
