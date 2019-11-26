@@ -74,6 +74,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
       - block risky sign-in behaviors
     - https://docs.microsoft.com/nl-nl/azure/active-directory/conditional-access/overview
   - MFA with Conditional Access
+    - https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access
   - 3rd party MFA partner integration
 - P2
   - Vulnerabilities and risky accounts detection
