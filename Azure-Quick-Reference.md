@@ -49,7 +49,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 
 ## Azure Identity
-### Azure Active Directory pricing
+### Azure Active Directory features and service tiers
 - Free
   - 500.000 Object Limit
   - Azure AD Connect sync
