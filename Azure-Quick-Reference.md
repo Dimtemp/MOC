@@ -70,6 +70,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - P2
   - Vulnerabilities and risky accounts detection
   - Risk events investigation
+    - https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-risk-events
   - Risk based Conditional Access policies
   - PIM
   - Access Reviews
