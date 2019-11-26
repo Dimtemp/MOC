@@ -50,11 +50,30 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 ## Azure Identity
 ### Azure Active Directory pricing
-- Free: 500.000 Object Limit, Azure AD Connect sync
-- Office 365 apps: No Object Limit, Company branding, Self-service password reset for cloud users, SLA, Device write-back
-- P1: Self-service password reset/change/unlock with on-premises write-back, Azure AD Join, Connect Health, Advanced Group Access Management (Dynamic Groups, naming policy, expiration), Conditional Access, MFA with Conditional Access, 3rd party MFA partner integration
-- P2: Vulnerabilities and risky accounts detection, Risk events investigation, Risk based Conditional Access policies, PIM, Access Reviews
-- Pricing from https://azure.microsoft.com/en-us/pricing/details/active-directory/
+- Free
+  - 500.000 Object Limit
+  - Azure AD Connect sync
+- Office 365 apps
+  - No Object Limit
+  - Company branding
+  - Self-service password reset for cloud users
+  - SLA
+  - Device write-back
+- P1
+  - Self-service password reset/change/unlock with on-premises write-back
+  - Azure AD Join
+  - Connect Health
+  - Advanced Group Access Management (Dynamic Groups, naming policy, expiration)
+  - Conditional Access
+  - MFA with Conditional Access
+  - 3rd party MFA partner integration
+- P2
+  - Vulnerabilities and risky accounts detection
+  - Risk events investigation
+  - Risk based Conditional Access policies
+  - PIM
+  - Access Reviews
+- Source https://azure.microsoft.com/en-us/pricing/details/active-directory/
 
 
 ## Azure Availability
