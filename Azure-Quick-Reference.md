@@ -13,12 +13,13 @@ Defines the availability vs storage and access costs.
 - RA-GRS: GRS with readable replica
 
 ### Storage Account Kind
-- Blob: blob only, not file/table/queue storage, hot + cool access tiers, only LRS/GRS/RA-GRs replication
-- v1: no configurable access tiers, only LRS/GRS/RA-GRs replication
 - v2: all available replication configurations, all available access tiers
+- v1: no configurable access tiers, only LRS/GRS/RA-GRs replication
+- Blob: no file/table/queue storage, hot + cool access tiers, only LRS/GRS/RA-GRs replication
 
 
-## Azure VM Sizes
+## Azure VMs
+### Azure VM Sizes
 Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - A Basic, classic
 - B Burstable, economical
@@ -45,6 +46,51 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - TCP/UDP/3389 RDP
 - TCP/5985 WinRM
 - TCP/5986 WinRM
+
+
+## Azure Identity
+### Azure Active Directory pricing
+- Free: 500.000 Object Limit, Azure AD Connect sync
+- Office 365 apps: No Object Limit, Company branding, Self-service password reset for cloud users, SLA, Device write-back
+- P1: Self-service password reset/change/unlock with on-premises write-back, Azure AD Join, Connect Health, Advanced Group Access Management (Dynamic Groups, naming policy, expiration), Conditional Access, MFA with Conditional Access, 3rd party MFA partner integration
+- P2: Vulnerabilities and risky accounts detection, Risk events investigation, Risk based Conditional Access policies, PIM, Access Reviews
+- Pricing from https://azure.microsoft.com/en-us/pricing/details/active-directory/
+
+
+## Azure Availability
+- https://azure.microsoft.com/en-us/support/legal/sla/summary/
+- https://azure.microsoft.com/en-us/support/legal/sla/
+- 99%, ca 4 days per year
+  - Storage account cool access tier for write requests
+- 99.9%, ca 8 hours per year
+  - most services
+  - Azure Active Directory Basic and Premium
+  - Storage Account Hot access tier for read requests
+  - Storage Account RA-GRS Replication + Cool access tier for read requests
+  - application gateway
+- 99.95% ca 4 hours per year
+  - API mgmt
+  - App svc (not free or shared tiers)
+  - Application gateway
+  - Azure firewall
+  - Azure Databricks
+  - VM in availability set with 2+ instances
+  - ExpressRoute
+  - Azure Functions (ex Consumption Plans)
+  - Machine Learning Request Response Service API transactions
+  - Virtual WAN
+  - VPN Gateway (Standard+, not Basic)
+- 99.99%, less than 1 hour per year
+  - Azure Front Door
+  - DDoS Protection
+  - Event Grid
+  - Load Balancer
+  - Azure SQL DB (Basic tier also), Cosmos DB, MySQL, PostgreSQL
+  - SAP HANA on Azure Large Instances
+  - Storage Account RA-GRS Replication + Hot access tier for read requests
+  - Traffic Manager
+- 99.999%
+  - Azure Cosmos DB configured with multiple regions as writable endpoints
 
 
 ## Azure resources on the web
@@ -101,37 +147,3 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://docs.microsoft.com/en-us/learn/azure/ Unlock your cloud skills in minutes.
 
 
-## Azure Availability
-- https://azure.microsoft.com/en-us/support/legal/sla/summary/
-- https://azure.microsoft.com/en-us/support/legal/sla/
-- 99%, ca 4 days per year
-  - Storage account cool access tier for write requests
-- 99.9%, ca 8 hours per year
-  - most services
-  - Azure Active Directory Basic and Premium
-  - Storage Account Hot access tier for read requests
-  - Storage Account RA-GRS Replication + Cool access tier for read requests
-  - application gateway
-- 99.95% ca 4 hours per year
-  - API mgmt
-  - App svc (not free or shared tiers)
-  - Application gateway
-  - Azure firewall
-  - Azure Databricks
-  - VM in availability set with 2+ instances
-  - ExpressRoute
-  - Azure Functions (ex Consumption Plans)
-  - Machine Learning Request Response Service API transactions
-  - Virtual WAN
-  - VPN Gateway (Standard+, not Basic)
-- 99.99%, less than 1 hour per year
-  - Azure Front Door
-  - DDoS Protection
-  - Event Grid
-  - Load Balancer
-  - Azure SQL DB (Basic tier also), Cosmos DB, MySQL, PostgreSQL
-  - SAP HANA on Azure Large Instances
-  - Storage Account RA-GRS Replication + Hot access tier for read requests
-  - Traffic Manager
-- 99.999%
-  - Azure Cosmos DB configured with multiple regions as writable endpoints
