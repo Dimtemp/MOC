@@ -65,6 +65,14 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
   - Connect Health
   - Advanced Group Access Management (Dynamic Groups, naming policy, expiration)
   - Conditional Access
+    - If-then statements, if a user wants to access a resource, then they must complete an action.
+    - Common policies
+      - require MFA for admins
+      - require MFA for specific app access
+      - require managed devices for specific apps
+      - block or grant from specific locations
+      - block risky sign-in behaviors
+    - https://docs.microsoft.com/nl-nl/azure/active-directory/conditional-access/overview
   - MFA with Conditional Access
   - 3rd party MFA partner integration
 - P2
