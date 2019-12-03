@@ -10,8 +10,8 @@
 [AZ-301 Deploying Managed Containerized Workloads to Azure (AKS)](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T03_Lab_Mod02_Deploying%20Managed%20Containerized%20Workloads%20to%20Azure.md)
 
 # Day 2 Exercises
-[Configuring and Managing Virtual Networks: VNet peering and service chaining](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T02_Lab_Mod03_Configuring%20VNet%20peering%20and%20service%20chaining.md)
+[AZ-300 Configuring and Managing Virtual Networks: VNet peering and service chaining](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T02_Lab_Mod03_Configuring%20VNet%20peering%20and%20service%20chaining.md)
 
-[Implementing Advanced Virtual Networking: Azure Load Balancer](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod03_Implementing%20Azure%20Load%20Balancer%20Standard.md)
+[AZ-300 Implementing Advanced Virtual Networking: Azure Load Balancer](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod03_Implementing%20Azure%20Load%20Balancer%20Standard.md)
 
-[Networking Azure Application Components: Deploying Network Infrastructure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
+[AZ-301 Networking Azure Application Components: Deploying Network Infrastructure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
