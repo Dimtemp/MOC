@@ -14,4 +14,74 @@
 
 [AZ-300 Implementing Advanced Virtual Networking: Azure Load Balancer](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod03_Implementing%20Azure%20Load%20Balancer%20Standard.md)
 
-[AZ-301 Networking Azure Application Components: Deploying Network Infrastructure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
+[AZ-301 Networking Azure Application Components: Deploying Network Infrastructure (Azure Building Blocks)](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
+
+# Day 3 Exercises
+[Implementing and Managing Storage: Implementing Azure Storage access controls](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod01_Implementing%20Azure%20Storage%20access%20controls.md)
+
+
+# Day 4 Exercises
+
+# Day 5 Exercises
+[Managing Identities: Implementing user-assigned managed identities for Azure resources](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T01_Lab_Mod05_Implementing%20user-assigned%20managed%20identities%20for%20Azure%20resources.md)
+
+# Unassigned Exercises
+
+Securing Identities
+Lab: Implementing custom Role Based Access Control (RBAC) roles
+https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod04_Implementing%20custom%20Role%20Based%20Access%20Control%20roles.md
+
+
+Implementing and Managing Application Services
+Lab: Implementing Azure Logic Apps
+https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T04_Lab_Mod01_Implementing%20Azure%20Logic%20Apps.md
+
+
+Developing for the cloud
+Lab: Configuring a Message-Based Integration Architecture
+https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T06_Lab_Mod01_Configuring%20a%20Message-Based%20Integration%20Architecture.md
+
+
+
+Managing Security and Identity for Azure Solutions
+Lab Answer Key: Securing Secrets in Azure
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod01_Securing%20Secrets%20in%20Azure.md
+
+Integrating SaaS Services Available on the Azure Platform
+Lab Answer Key: Deploying Service Instances as Components of Overall Azure Solutions
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod02_Deploying%20Service%20Instances%20as%20Components%20of%20Overall%20Azure%20Solutions.md
+
+
+Comparing Database Options in Azure
+Lab Answer Key: Deploying Database Instances in Azure
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T02_Lab_Mod02_Deploying%20Database%20Instances%20in%20Azure.md
+
+
+Monitoring and automating Azure solutions
+Lab Answer Key: Deploying Configuration Management solutions to Azure
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T02_Lab_Mod03_Deploying%20Configuration%20Management%20solutions%20to%20Azure.md
+
+
+Deploying Resources with Azure Resource Manager
+Lab Answer Key: Getting Started with Azure Resource Manager Templates and Azure Building Blocks
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T03_Lab_Mod01_Getting%20Started%20with%20Azure%20Resource%20Manager%20Templates.md
+
+Creating Managed Server Applications in Azure
+Lab Answer Key: Deploying Managed Containerized Workloads to Azure
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T03_Lab_Mod02_Deploying%20Managed%20Containerized%20Workloads%20to%20Azure.md
+
+Authoring Serverless Applications in Azure
+Lab Answer Key: Deploying Serverless Workloads to Azure
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T03_Lab_Mod03_Deploying%20Serverless%20Workloads%20to%20Azure.md
+
+Building Azure IaaS-Based Server Applications.
+Lab Answer Key: Building Azure IaaS-Based Server Applications by using Azure Resource Manager Templates
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod02_Building%20Azure%20IaaS-Based%20Server%20Applications%20by%20using%20ARM.md
+
+Networking Azure Application Components
+Lab Answer Key: Deploying Network Infrastructure for Use in Azure Solutions
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md
+
+Integrating Azure Solution Components using Messaging Services
+Lab Answer Key: Deploying Messaging components to facilitate communication between Azure resources
+https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod04_Deploying%20Messaging%20components%20to%20facilitate%20communication%20between%20Azure%20resources.md
