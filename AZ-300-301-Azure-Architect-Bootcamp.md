@@ -13,7 +13,7 @@
 
 [AZ-301 Building Azure IaaS-Based Server Applications: Building Azure IaaS-Based Server Applications by using Azure Resource Manager Templates](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod02_Building%20Azure%20IaaS-Based%20Server%20Applications%20by%20using%20ARM.md)
 
-## Relevant Exercises from AZ-103 VM
+## Relevant Exercises from AZ-103
 [Deploy and Manage Virtual Machines](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/02a%20-%20Deploy%20and%20Manage%20Virtual%20Machines%20(az-100-03).md)
 
 [Implement Azure Site Recovery between Azure regions](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/07%20-%20Implement%20ASR%20Between%20Regions%20(az-101-01).md)
@@ -30,8 +30,7 @@
 
 [AZ-301 Networking Azure Application Components: Deploying Network Infrastructure for Use in Azure Solutions](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
 
-
-## Relevant Exercises from AZ-103 Net
+## Relevant Exercises from AZ-103
 [Configure Azure DNS](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/04%20-%20Configure%20Azure%20DNS%20(az-100-04b).md)
 
 [VNet Peering and Service Chaining](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/05%20-%20VNet%20Peering%20and%20Service%20Chaining%20(az-100-04).md)
