@@ -50,3 +50,31 @@ https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/m
 [AZ-300 Securing IdentitiesLab: Implementing custom Role Based Access Control (RBAC) roles](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod04_Implementing%20custom%20Role%20Based%20Access%20Control%20roles.md)
 
 [AZ-301 Managing Security and Identity for Azure Solutions: Securing Secrets in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod01_Securing%20Secrets%20in%20Azure.md)
+
+
+# Relevant Exercises from AZ-103
+[Deploy and Manage Virtual Machines](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/02a%20-%20Deploy%20and%20Manage%20Virtual%20Machines%20(az-100-03).md)
+
+[Implement and Manage Storage](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/03%20-%20Implement%20and%20Manage%20Storage%20(az-100-02).md)
+
+[Configure Azure DNS](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/04%20-%20Configure%20Azure%20DNS%20(az-100-04b).md)
+
+[VNet Peering and Service Chaining](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/05%20-%20VNet%20Peering%20and%20Service%20Chaining%20(az-100-04).md)
+
+[Use Azure Network Watcher for monitoring and troubleshooting network connectivity](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/06%20-%20Azure%20Network%20Watcher%20(az-101-03b).md)
+
+[Implement Azure Site Recovery between Azure regions](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/07%20-%20Implement%20ASR%20Between%20Regions%20(az-101-01).md)
+
+[Load Balancer and Traffic Manager](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/08%20-%20Load%20Balancer%20and%20Traffic%20Manager%20(az-101-03).md)
+
+[Implement Directory Synchronization](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/09%20-%20Implement%20Directory%20Synchronization%20(az-100-05).md)
+
+[Azure AD Identity Protection](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/10a%20-%20Azure%20AD%20Identity%20Protection%20(az-101-04b).md)
+
+[Self-Service Password Reset](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/10b%20-%20Self-Service%20Password%20Reset%20(az-100-05b).md)
+
+[Role-Based Access Control](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/11a%20-%20Role-Based%20Access%20Control%20(az-100-01).md)
+
+[Implementing governance and compliance with Azure initiatives and resource locks](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/11b%20-%20Governance%20and%20Compliance%20(az-100-01b).md)
+
+[Implement Azure File Sync](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/12%20-%20Implementing%20File%20Sync%20(az-100-02b).md)
