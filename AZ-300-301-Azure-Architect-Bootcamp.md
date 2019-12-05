@@ -51,7 +51,8 @@
 
 [Implement Azure File Sync](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/12%20-%20Implementing%20File%20Sync%20(az-100-02b).md)
 
-# Day 4 Exercises: Serverless
+
+# Day 4 Exercises: Containers and Serverless
 [AZ-300 Implementing and Managing Application Services: Implementing Azure Logic Apps](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T04_Lab_Mod01_Implementing%20Azure%20Logic%20Apps.md)
 
 [AZ-300 Developing for the cloud: Configuring a Message-Based Integration Architecture](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T06_Lab_Mod01_Configuring%20a%20Message-Based%20Integration%20Architecture.md)
@@ -62,6 +63,9 @@
 https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T03_Lab_Mod03_Deploying%20Serverless%20Workloads%20to%20Azure.md)
 
 [AZ-301 Integrating Azure Solution Components using Messaging Services: Deploying Messaging components to facilitate communication between Azure resources](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod04_Deploying%20Messaging%20components%20to%20facilitate%20communication%20between%20Azure%20resources.md)
+
+## Relevant Exercises from 20533
+[Implementing containers in Azure](https://github.com/MicrosoftLearning/20533-ImplementingMicrosoftAzureInfrastructureSolutions/blob/master/Instructions/20533E_LAB_AK_07.md)
 
 
 # Day 5 Exercises: Identity
