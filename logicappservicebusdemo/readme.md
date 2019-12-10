@@ -1,8 +1,9 @@
-This Azure template creates a storage account, two logic apps and a service bus.
+This Azure template creates a storage account, two logic apps and a service bus, for the purpose of demonstrating a logic app and service bus.
 
-The first logic app monitors the storage account, and writes a message to the service bus when a new file is created.
-
-The second logic app monitors the service bus, and creates a new file in the storage account when it reads the message from the service bus.
+Actions
+1) Create a blob container in the storage account
+2) Edit logicapp1, and monitor the storage account blob container. Write a message into the service bus when a file is detected.
+3) Edit logicapp2, and monitor the service bus. Write a message into the storage account queue when a message is detected.
 
 DISCLAIMER: use on your own risk!
 
