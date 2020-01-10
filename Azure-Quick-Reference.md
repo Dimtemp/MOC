@@ -153,6 +153,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - http://azurestorage.azurewebsites.net Azure Storage web explorer
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
 - http://www.azurespeed.com/ Azure Latency Test
+- https://youtu.be/oegdguPP5Os Construction of Microsoft Azure Datacenter West Europe
 
 
 ### Azure service URI's
