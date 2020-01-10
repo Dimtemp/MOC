@@ -77,3 +77,8 @@ Virginia (US Gov – Virginia)
 ### Location unknown, region known:
 VS (SEC) – west
 VS (SEC) – oost
+
+
+## Sources
+- az account list-locations
+- https://map.buildazure.com/
