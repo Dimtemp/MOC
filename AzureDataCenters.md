@@ -15,6 +15,36 @@ https://www.google.com/about/datacenters/inside/locations/index.html
 
 
 ## Verwerken Azure
+8120 Veta Drive
+Cheyenne, WY 82009
+
+Microsoft Azure | US North Central
+601 Northwest Avenue
+Northlake, IL 60164
+
+8855 Grand Avenue
+West Des Moines, IA 50266
+
+501 Port Industrial Way
+Quincy, WA 98848
+
+Microsoft Azure | US South Central
+5150 Rogers Road
+San Antonio, TX 78251
+
+Microsoft Azure | US East 1 + 2
+101 Herbert Drive
+Boydton, VA 23917
+
+550 SE White Crane Road
+West Des Moines, IA 50265
++
+Linn, IA 50061
+
+5200 Rogers Road
+San Antonio, TX 78251
+
+
 ### NOORD- EN ZUID-AMERIKA
 Iowa (VS – centraal)
 Virginia (VS – oost 2)
