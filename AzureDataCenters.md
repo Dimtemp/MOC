@@ -3,6 +3,7 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 
 ## Microsoft
 - Q28Q+J7 Middenmeer, Netherlands, https://youtu.be/oegdguPP5Os Construction of Microsoft Azure Datacenter West Europe
+-- Animation: https://youtu.be/oegdguPP5Os
 - Leopardstown, Dublin, Ireland
 - 64Q8+H4 Quincy, Washington, United States
 - F8H3+HW San Antonio, Texas, Verenigde Staten, US South Central
