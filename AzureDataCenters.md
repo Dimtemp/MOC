@@ -5,10 +5,13 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 - Q28Q+J7 Middenmeer, Netherlands, https://youtu.be/oegdguPP5Os Construction of Microsoft Azure Datacenter West Europe
 - Leopardstown, Dublin, Ireland
 - 64Q8+H4 Quincy, Washington, United States
+- F8H3+HW San Antonio, Texas, Verenigde Staten, US South Central
 
 ## Google
 https://www.google.com/about/datacenters/inside/locations/index.html
-- CVG6+22 Eemshaven, Netherlands
+- Middenmeer, Netherlands
+- CVG6+22 Eemshaven, Netherlands, Greenbox Computing is a Google subsidiary
+
 
 
 ## Verwerken Azure
@@ -80,5 +83,6 @@ VS (SEC) – oost
 
 
 ## Sources
+- https://www.datacenterhawk.com/providers/microsoft-azure
 - az account list-locations
 - https://map.buildazure.com/
