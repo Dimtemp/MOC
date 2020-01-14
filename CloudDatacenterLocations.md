@@ -5,9 +5,9 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 |-----------|---------|------|------------------------------|---------|
 | Europe | Netherlands | Azure West Europe | Q28Q+J7 Middenmeer, Netherlands | Construction of Microsoft Azure Datacenter West Europe: https://youtu.be/oegdguPP5Os |
 | Europe | Ireland | Azure North Europe |  | Leopardstown, Dublin, Ireland |
-| North America | United States | Azure | 64Q8+H4 Quincy, Washington, United States |  |
+| North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
-| North America | United States | Azure | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
+| North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
 | North America | United States | Azure US North Central |  |  |
 | North America | United States | Azure | 601 Northwest Avenue, Northlake, IL 60164 |  |
 | North America | United States | Azure | 8855 Grand Avenue, West Des Moines, IA 50266 |  |
@@ -19,19 +19,15 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 | North America | United States | Azure | Linn, IA 50061 |  |
 | Europe | Netherlands | Google | Middenmeer, Netherlands |  |
 | Europe | Netherlands | Google | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
-| North America | United States | Azure tbd | C3FF+R5 San Jose, California, United States |  |
+| North America | United States | Azure US West | C3FF+R5 San Jose, California, United States |  |
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
+| North America | Canada | Azure Canada East| Quebec city |  |
+| North America | Canada | Azure Canada Central | Toronto |  |
 
 
 ### NOORD- EN ZUID-AMERIKA
 - Iowa (VS – centraal)
 - Illinois (VS – noord-centraal)
-- Texas (VS – zuid-centraal)
-- Washington (VS – west 2)
-- Wyoming (VS – west-centraal)
-- Californië (VS – west)
-- Toronto (Canada – centraal)
-- Quebec stad (Canada – oost)
 
 ### EUROPE
 - Parijs (Frankrijk – centraal)
