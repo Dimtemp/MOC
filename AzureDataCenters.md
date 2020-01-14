@@ -7,7 +7,7 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 | Europe |  |  |  |  |  | Leopardstown, Dublin, Ireland |
 | United States |  | Azure something | 64Q8+H4 Quincy, Washington, United States |  |  |  |
 | United States |  | Azure US South Central | F8H3+HW San Antonio, Texas |  |  |  |
-| United States |  | Azure | 8120 Veta Drive, Cheyenne, WY 82009 |  |  |  |
+| United States |  | Azure | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten |  |  | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
 | United States |  | Azure US North Central | Address |  |  |  |
 | United States |  | Azure | 601 Northwest Avenue, Northlake, IL 60164 |  |  |  |
 | United States |  | Azure | 8855 Grand Avenue, West Des Moines, IA 50266 |  |  |  |
