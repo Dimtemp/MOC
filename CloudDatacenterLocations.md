@@ -82,8 +82,9 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 
 
 ## Sources
-- https://www.datacenterhawk.com/providers/microsoft-azure
 - az account list-locations
+- https://www.datacenterhawk.com/providers/microsoft-azure
+- https://www.datacenters.com/microsoft-singapore
 - https://map.buildazure.com/
 - https://www.google.com/about/datacenters/inside/locations/index.html
 
