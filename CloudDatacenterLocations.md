@@ -27,6 +27,8 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
 | North America | Canada | Azure Canada East| Quebec city |  |
 | North America | Canada | Azure Canada Central | Toronto |  |
+| South America | Chili | Google | J8R3+H3 Santiago, Chili | | |
+
 
 ### NOORD- EN ZUID-AMERIKA
 - Iowa (VS – centraal)
