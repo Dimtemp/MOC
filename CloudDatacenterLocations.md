@@ -22,6 +22,7 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | Europe | Netherlands | Google | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
 | Europe | Ireland | Google | 8H72+F8 Aungierstown, County Dublin, Ireland |  |
 | Europe | Belgium | Google | FV98+P7 Saint-Ghislain, Belgium |  |
+| Europe | Denmark | Google | HMH4+59 Fredericia, Fredericia Municipality, Denemarken |  |
 | North America | United States | Azure US West | C3FF+R5 San Jose, California, United States |  |
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
 | North America | Canada | Azure Canada East| Quebec city |  |
