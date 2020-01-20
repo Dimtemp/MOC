@@ -5,7 +5,7 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | Continent | Country | Name | Address or Google Quick Code | Remarks |
 |-----------|---------|------|------------------------------|---------|
 | Europe | Netherlands | Azure West Europe | Q28Q+J7 Middenmeer, Netherlands | Construction of Microsoft Azure Datacenter West Europe: https://youtu.be/oegdguPP5Os |
-| Europe | Ireland | Azure North Europe | 8GFW+V3 Lucan, County Dublin, Ierland | and/or Leopardstown, Dublin, Ireland |
+| Europe | Ireland | Azure North Europe | 8GFW+V3 Lucan, County Dublin, Ireland | and/or Leopardstown, Dublin, Ireland |
 | North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
 | North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
@@ -20,7 +20,8 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | North America | United States | Azure | Linn, IA 50061 |  |
 | Europe | Netherlands | Google | Middenmeer, Netherlands | Under construction |
 | Europe | Netherlands | Google | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
-| Europe | Ireland | Google | 8H72+F8 Aungierstown, County Dublin, Ierland |  |
+| Europe | Ireland | Google | 8H72+F8 Aungierstown, County Dublin, Ireland |  |
+| Europe | Belgium | Google | FV98+P7 Saint-Ghislain, Belgium |  |
 | North America | United States | Azure US West | C3FF+R5 San Jose, California, United States |  |
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
 | North America | Canada | Azure Canada East| Quebec city |  |
