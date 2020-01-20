@@ -18,7 +18,7 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | North America | United States | Azure US East 1 + 2 | 101 Herbert Drive, Boydton, VA 23917 |  |
 | North America | United States | Azure | 550 SE White Crane Road, West Des Moines, IA 50265 |  |
 | North America | United States | Azure | Linn, IA 50061 |  |
-| Europe | Netherlands | Google | Middenmeer, Netherlands |  |
+| Europe | Netherlands | Google | Middenmeer, Netherlands | Under construction |
 | Europe | Netherlands | Google | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
 | Europe | Ireland | Google | 8H72+F8 Aungierstown, County Dublin, Ierland |  |
 | North America | United States | Azure US West | C3FF+R5 San Jose, California, United States |  |
