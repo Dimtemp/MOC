@@ -1,10 +1,11 @@
 # Disclaimer
-A personal listing of (suspect) cloud datacenters. Most of these locations are not easily verifyable.
+A listing of (suspect) cloud datacenters with their address and/or Google Quick Code. Most of these locations are not easily verifyable.
 
+# Listing
 | Continent | Country | Name | Address or Google Quick Code | Remarks |
 |-----------|---------|------|------------------------------|---------|
 | Europe | Netherlands | Azure West Europe | Q28Q+J7 Middenmeer, Netherlands | Construction of Microsoft Azure Datacenter West Europe: https://youtu.be/oegdguPP5Os |
-| Europe | Ireland | Azure North Europe |  | Leopardstown, Dublin, Ireland |
+| Europe | Ireland | Azure North Europe | 8GFW+V3 Lucan, County Dublin, Ierland | and/or Leopardstown, Dublin, Ireland |
 | North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
 | North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
@@ -24,7 +25,6 @@ A personal listing of (suspect) cloud datacenters. Most of these locations are n
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
 | North America | Canada | Azure Canada East| Quebec city |  |
 | North America | Canada | Azure Canada Central | Toronto |  |
-
 
 ### NOORD- EN ZUID-AMERIKA
 - Iowa (VS – centraal)
