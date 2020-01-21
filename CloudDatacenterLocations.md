@@ -1,5 +1,5 @@
 # Disclaimer
-A listing of (suspect) cloud datacenters with their address and/or Google Quick Code. Most of these locations are not easily verifyable.
+A listing of (suspect) cloud datacenters with their street address and/or Google Quick Code. Most of these locations are not easily verifyable.
 
 # Listing
 | Continent | Country | Name | Address or Google Quick Code | Remarks |
@@ -19,15 +19,20 @@ A listing of (suspect) cloud datacenters with their address and/or Google Quick 
 | North America | United States | Azure | 550 SE White Crane Road, West Des Moines, IA 50265 |  |
 | North America | United States | Azure | Linn, IA 50061 |  |
 | Europe | Netherlands | Google | Middenmeer, Netherlands | Under construction |
-| Europe | Netherlands | Google | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
-| Europe | Ireland | Google | 8H72+F8 Aungierstown, County Dublin, Ireland |  |
-| Europe | Belgium | Google | FV98+P7 Saint-Ghislain, Belgium |  |
-| Europe | Denmark | Google | HMH4+59 Fredericia, Fredericia Municipality, Denemarken |  |
+| Europe | Netherlands | Google Eemshaven | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
+| Europe | Ireland | Google Dublin | 8H72+F8 Aungierstown, County Dublin, Ireland |  |
+| Europe | Belgium | Google St. Ghislain | FV98+P7 Saint-Ghislain, Belgium |  |
+| Europe | Denmark | Google Fredericia | HMH4+59 Fredericia, Fredericia Municipality, Denemarken |  |
+| Europe | Finland | Google Hamina | G4Q7+R9 Petkele, Hamina, Finland |  |
+| North America | United States | Google The Dalles | JQJX+QH The Dalles, Oregon, Verenigde Staten |  |
+| North America | United States | Google Henderson | 3X6V+36 Las Vegas Valley, Nevada, Verenigde Staten |  |
 | North America | United States | Azure US West | C3FF+R5 San Jose, California, United States |  |
 | South America | Brazil | Azure Brazil South | Sao Paulo state? | | |
 | North America | Canada | Azure Canada East| Quebec city |  |
 | North America | Canada | Azure Canada Central | Toronto |  |
-| South America | Chili | Google | J8R3+H3 Santiago, Chili | | |
+| South America | Chili | Google Quilicura | J8R3+H3 Santiago, Chili | | |
+| Asia | Singapore | Google Singapore | 9P25+FR Singapore | | |
+
 
 
 ### NOORD- EN ZUID-AMERIKA
