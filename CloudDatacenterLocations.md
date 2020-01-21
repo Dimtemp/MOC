@@ -9,8 +9,7 @@ A listing of (suspect) cloud datacenters with their street address and/or Google
 | North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
 | North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
-| North America | United States | Azure US North Central |  |  |
-| North America | United States | Azure | 601 Northwest Avenue, Northlake, IL 60164 |  |
+| North America | United States | Azure US North Central | 601 Northwest Avenue, Northlake, IL 60164 |  |
 | North America | United States | Azure | 8855 Grand Avenue, West Des Moines, IA 50266 |  |
 | North America | United States | Azure | 501 Port Industrial Way, Quincy, WA 98848 |  |
 | North America | United States | Azure US South Central | 5150 Rogers Road, San Antonio, TX 78251 |  |
