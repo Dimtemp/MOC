@@ -17,6 +17,7 @@ A listing of (suspect) cloud datacenters with their street address and/or Google
 | North America | United States | Azure US East 1 + 2 | 101 Herbert Drive, Boydton, VA 23917 |  |
 | North America | United States | Azure | 550 SE White Crane Road, West Des Moines, IA 50265 |  |
 | North America | United States | Azure | Linn, IA 50061 |  |
+| North America | United States | AWS | 44F2+VG Francis E. Warren AFB, Wyoming, USA | pop? |
 | Europe | Netherlands | Google | Middenmeer, Netherlands | Under construction |
 | Europe | Netherlands | Google Eemshaven | CVG6+22 Eemshaven, Netherlands | Greenbox Computing is a Google subsidiary |
 | Europe | Ireland | Google Dublin | 8H72+F8 Aungierstown, County Dublin, Ireland |  |
