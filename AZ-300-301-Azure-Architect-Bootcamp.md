@@ -71,7 +71,7 @@ https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/m
 # Day 5 Exercises: Identity
 [AZ-300 Managing Identities: Implementing user-assigned managed identities for Azure resources](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T01_Lab_Mod05_Implementing%20user-assigned%20managed%20identities%20for%20Azure%20resources.md)
 
-[AZ-300 Securing IdentitiesLab: Implementing custom Role Based Access Control (RBAC) roles](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod04_Implementing%20custom%20Role%20Based%20Access%20Control%20roles.md)
+[AZ-300 Securing Identities: Implementing custom Role Based Access Control (RBAC) roles](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod04_Implementing%20custom%20Role%20Based%20Access%20Control%20roles.md)
 
 [AZ-301 Managing Security and Identity for Azure Solutions: Securing Secrets in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod01_Securing%20Secrets%20in%20Azure.md)
 
