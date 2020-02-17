@@ -136,7 +136,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://github.com/Azure APIs, SDKs and open source projects from Microsoft Azure
 - https://github.com/Azure/azure-quickstart-templates Azure Resource Manager QuickStart Templates
 - https://github.com/mspnp Microsoft patterns & practices
-
+- https://docs.microsoft.com/en-us/archive/blogs/tangent_thoughts/bookmark-this-aka-msazureshortcuts Azure Shortcuts
 
 ### Free ebooks and whitepapers (by year of release)
 - https://gallery.technet.microsoft.com/Inside-the-Operations-2928e342 free ebook 2019
