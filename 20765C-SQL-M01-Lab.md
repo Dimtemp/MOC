@@ -42,20 +42,15 @@
 ## Exercise 2: Using the sqlcmd Utility
 ### Task 1: Use sqlcmd Interactively
 1. Right-click the Start button and click Command Prompt.
-2. In the command prompt window, enter the following command to view details of all sqlcmd parameters:
-
-`sqlcmd -?`
-3. Enter the following command to start sqlcmd and connect to MIA-SQL using Windows authentication:
-
-`sqlcmd -S MIA-SQL -E`
-4. In the sqlcmd command line, enter the following commands to view the databases on MIA-SQL. Verify that these include the AWDatabase database you created in the previous exercise.
-
-`SELECT name FROM sys.sysdatabases;`
-
-`GO`
-5. Enter the following command to exit sqlcmd.
-
-`Exit`
+1. In the command prompt window, enter the following command to view details of all sqlcmd parameters:
+  `sqlcmd -?`
+1. Enter the following command to start sqlcmd and connect to MIA-SQL using Windows authentication:
+  `sqlcmd -S MIA-SQL -E`
+1. In the sqlcmd command line, enter the following commands to view the databases on MIA-SQL. Verify that these include the AWDatabase database you created in the previous exercise.
+  `SELECT name FROM sys.sysdatabases;`
+  `GO`
+1. Enter the following command to exit sqlcmd.
+  `Exit`
 
 ### Task 2: Use sqlcmd to Run a Script
 1. In the command prompt window, enter the following command to use sqlcmd to run the GetDBInfo.sql script you created earlier in MIA-SQL.
