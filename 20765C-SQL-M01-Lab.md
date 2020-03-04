@@ -56,8 +56,8 @@
 
    ```sql
    SELECT name FROM sys.sysdatabases;
-  GO
-  ```
+   GO
+   ```
   
 1. Enter the following command to exit sqlcmd.
   ```pwsh
@@ -67,14 +67,20 @@
 ### Task 2: Use sqlcmd to Run a Script
 1. In the command prompt window, enter the following command to use sqlcmd to run the GetDBInfo.sql script you created earlier in MIA-SQL.
 
-`sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBInfo.sql`
+   ```pwsh
+   sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBInfo.sql
+   ```
 2. Note that the query results are returned, but they are difficult to read in the command prompt screen.
 3. Enter the following command to store the query output in a text file:
 
-`sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBinfo.sql -o D:\Labfiles\Lab01\Starter\DBinfo.txt`
+   ```pwsh
+   sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBinfo.sql -o D:\Labfiles\Lab01\Starter\DBinfo.txt
+   ```
 4. Enter the following command to view the text file that was created by sqlcmd:
 
-`Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt`
+   ```pwsh
+   Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt
+   ```
 5. View the results in the text file, and then close Notepad.
 6. Close the command prompt window.
 
@@ -85,11 +91,15 @@
 1. On the taskbar, click the Windows PowerShell icon.
 2. At the Windows PowerShell prompt, enter the following command:
 
-`Get-Process`
+   ```pwsh
+   Get-Process
+   ```
 3. Review the list of services. In the ProcessName column, note the SQL services.
 4. Enter the following command to list only the services with names beginning “SQL”,:
 
-`Get-Process SQL*`
+   ```pwsh
+   Get-Process SQL*
+   ```
 5. To find a way to sort the list, enter the following command:
 
 `Get-Help Sort`
