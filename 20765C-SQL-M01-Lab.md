@@ -62,7 +62,8 @@ sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBinfo.sql -o D:\Labfiles\L
 Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt
 5. View the results in the text file, and then close Notepad.
 6. Close the command prompt window.
-### Result: At the end of this exercise, you will have used sqlcmd to manage a database.
+
+#### Result: At the end of this exercise, you will have used sqlcmd to manage a database.
 
 ## Exercise 3: Using Windows PowerShell with SQL Server
 ### Task 1: Use Windows PowerShell
@@ -114,17 +115,17 @@ Get-Module
 6. View the cmdlets in the module, noting that they include cmdlets to perform tasks such as backing up databases and starting SQL Server instances.
 7. If the Script pane is not visible, click the Script drop-down arrow.
 8. In the Script pane, type the following commands. (Hint: Use the IntelliSense feature.)
-Import-Module SQLPS -DisableNameChecking
+`Import-Module SQLPS -DisableNameChecking`
 Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
-Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-GridView
+Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-GridView`
 9. Click Run Script. Then view the results in the window that is opened. (The script may take a few minutes to run.)
 10. Close the window, and modify the script as shown in the following example:
-Import-Module SQLPS -DisableNameChecking
+`Import-Module SQLPS -DisableNameChecking
 Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
-Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'
+Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'`
 11. Save the script as GetDatabases.ps1 in the D:\Labfiles\Lab01\Starter folder. Then close the PowerShell ISE.
 12. In the D:\Labfiles\Lab01\Starter folder, right-click GetDatabases.ps1 and click Run with PowerShell.
 13. When the script has completed, open Databases.txt in Notepad to view the results.
 14. Close Notepad.
 
-### Result: At the end of this task, you will have a PowerShell script that retrieves information about databases from SQL Server.
+#### Result: At the end of this task, you will have a PowerShell script that retrieves information about databases from SQL Server.
