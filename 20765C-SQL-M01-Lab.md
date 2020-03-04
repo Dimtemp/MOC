@@ -37,20 +37,20 @@
 10. On the File menu, click Save All. Then on the File menu, click Close Solution.
 11. Minimize SQL Server Management Studio.
 
-### Result: At the end of this exercise, you will have created a SQL Server Management Studio project containing script files.
+#### Result: At the end of this exercise, you will have created a SQL Server Management Studio project containing script files.
 
 ## Exercise 2: Using the sqlcmd Utility
 ### Task 1: Use sqlcmd Interactively
 1. Right-click the Start button and click Command Prompt.
 2. In the command prompt window, enter the following command to view details of all sqlcmd parameters:
-sqlcmd -?
+`sqlcmd -?`
 3. Enter the following command to start sqlcmd and connect to MIA-SQL using Windows authentication:
-sqlcmd -S MIA-SQL -E
+`sqlcmd -S MIA-SQL -E`
 4. In the sqlcmd command line, enter the following commands to view the databases on MIA-SQL. Verify that these include the AWDatabase database you created in the previous exercise.
-SELECT name FROM sys.sysdatabases;
-GO
+`SELECT name FROM sys.sysdatabases;`
+`GO`
 5. Enter the following command to exit sqlcmd.
-Exit
+`Exit`
 
 ### Task 2: Use sqlcmd to Run a Script
 1. In the command prompt window, enter the following command to use sqlcmd to run the GetDBInfo.sql script you created earlier in MIA-SQL.
