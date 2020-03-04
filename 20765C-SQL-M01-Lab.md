@@ -102,10 +102,14 @@
    ```
 5. To find a way to sort the list, enter the following command:
 
-`Get-Help Sort`
+   ```pwsh
+   Get-Help Sort
+   ```
 6. Review the help information, then enter the following command:
 
-`Get-Process SQL* | Sort-Object Handles`
+   ```pwsh
+   Get-Process SQL* | Sort-Object Handles
+   ```
 7. Verify that the list is now sorted by number of handles.
 8. Close Windows PowerShell.
 
@@ -114,29 +118,45 @@
 1. Ignore any error about a PowerShell module.
 1. At the PowerShell prompt, enter the following command:
 
-`Get-Module`
+   ```pwsh
+   Get-Module
+   ```
 1. Verify that the SQLPS module is not loaded. Then enter the following command to load it:
 
-`Import-Module SQLPS -DisableNameChecking`
+   ```pwsh
+   Import-Module SQLPS -DisableNameChecking
+   ```
 1. At the PowerShell prompt, enter the following command:
 
-`Get-Module`
+   ```pwsh
+   Get-Module
+   ```
 1. Verify that SQLPS and SQLASCMDLETS are listed.
 1. At the Windows PowerShell prompt, enter the following command:
 
-`Set-location SQLServer:\SQL\MIA-SQL`
+   ```pwsh
+   Set-location SQLServer:\SQL\MIA-SQL
+   ```
 1. At the Windows PowerShell prompt, enter the following command to display the SQL Server database engine instances on the server:
 
-`Get-ChildItem`
+   ```pwsh
+   Get-ChildItem
+   ```
 1. At the Windows PowerShell prompt, enter the following command:
 
-`Set-location SQLServer:\SQL\MIA-SQL\DEFAULT\Databases`
+   ```pwsh
+   Set-location SQLServer:\SQL\MIA-SQL\DEFAULT\Databases
+   ```
 1. At the Windows PowerShell prompt, enter the following command to display the databases on the default instance:
 
-`Get-ChildItem`
+   ```pwsh
+   Get-ChildItem
+   ```
 1. At the Windows PowerShell prompt, enter the following command:
 
-`Invoke-Sqlcmd "SELECT @@version"`
+   ```pwsh
+   Invoke-Sqlcmd "SELECT @@version"
+   ```
 1. Review the version information.
 1. Close the SQL Server Powershell window and close SQL Server Management Studio without saving any files.
 
@@ -144,32 +164,37 @@
 1. On the task bar, right-click the Windows PowerShell icon and click Windows PowerShell ISE.
 2. In the PowerShell command prompt, enter the following command:
 
-`Get-Module`
+   ```pwsh
+   Get-Module
+   ```
 3. Verify that the SQLPS module is not loaded. Then enter the following command to load it:
 
-`Import-Module SQLPS -DisableNameChecking`
+   ```pwsh
+   Import-Module SQLPS -DisableNameChecking
+   ```
 4. Enter the following command to verify that the SQLPS module is now loaded.
 
-`Get-Module`
+   ```pwsh
+   Get-Module
+   ```
 5. If the Commands pane is not visible, on the View menu, click Show Command Add-on. Then in the Commands pane, in the Modules list, select SQLPS.
 6. View the cmdlets in the module, noting that they include cmdlets to perform tasks such as backing up databases and starting SQL Server instances.
 7. If the Script pane is not visible, click the Script drop-down arrow.
 8. In the Script pane, type the following commands. (Hint: Use the IntelliSense feature.)
 
-`Import-Module SQLPS -DisableNameChecking`
-
-`Set-location SQLServer:\SQL\MIA-SQL\Default\Databases`
-
-`Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-GridView`
-
+   ```pwsh
+   Import-Module SQLPS -DisableNameChecking
+   Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
+   Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-GridView
+   ```
 9. Click Run Script. Then view the results in the window that is opened. (The script may take a few minutes to run.)
 10. Close the window, and modify the script as shown in the following example:
 
-`Import-Module SQLPS -DisableNameChecking`
-
-`Set-location SQLServer:\SQL\MIA-SQL\Default\Databases`
-
-`Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'`
+   ```pwsh
+   Import-Module SQLPS -DisableNameChecking
+   Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
+   Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'
+   ```
 11. Save the script as GetDatabases.ps1 in the D:\Labfiles\Lab01\Starter folder. Then close the PowerShell ISE.
 12. In the D:\Labfiles\Lab01\Starter folder, right-click GetDatabases.ps1 and click Run with PowerShell.
 13. When the script has completed, open Databases.txt in Notepad to view the results.
