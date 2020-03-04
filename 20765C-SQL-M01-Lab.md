@@ -43,23 +43,31 @@
 ### Task 1: Use sqlcmd Interactively
 1. Right-click the Start button and click Command Prompt.
 2. In the command prompt window, enter the following command to view details of all sqlcmd parameters:
+
 `sqlcmd -?`
 3. Enter the following command to start sqlcmd and connect to MIA-SQL using Windows authentication:
+
 `sqlcmd -S MIA-SQL -E`
 4. In the sqlcmd command line, enter the following commands to view the databases on MIA-SQL. Verify that these include the AWDatabase database you created in the previous exercise.
+
 `SELECT name FROM sys.sysdatabases;`
+
 `GO`
 5. Enter the following command to exit sqlcmd.
+
 `Exit`
 
 ### Task 2: Use sqlcmd to Run a Script
 1. In the command prompt window, enter the following command to use sqlcmd to run the GetDBInfo.sql script you created earlier in MIA-SQL.
-sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBInfo.sql
+
+`sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBInfo.sql`
 2. Note that the query results are returned, but they are difficult to read in the command prompt screen.
 3. Enter the following command to store the query output in a text file:
-sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBinfo.sql -o D:\Labfiles\Lab01\Starter\DBinfo.txt
+
+`sqlcmd -S MIA-SQL -E -i D:\Labfiles\Lab01\Starter\GetDBinfo.sql -o D:\Labfiles\Lab01\Starter\DBinfo.txt`
 4. Enter the following command to view the text file that was created by sqlcmd:
-Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt
+
+`Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt`
 5. View the results in the text file, and then close Notepad.
 6. Close the command prompt window.
 
@@ -69,14 +77,18 @@ Notepad D:\Labfiles\Lab01\Starter\DBinfo.txt
 ### Task 1: Use Windows PowerShell
 1. On the taskbar, click the Windows PowerShell icon.
 2. At the Windows PowerShell prompt, enter the following command:
-Get-Process
+
+`Get-Process`
 3. Review the list of services. In the ProcessName column, note the SQL services.
 4. Enter the following command to list only the services with names beginning “SQL”,:
-Get-Process SQL*
+
+`Get-Process SQL*`
 5. To find a way to sort the list, enter the following command:
-Get-Help Sort
+
+`Get-Help Sort`
 6. Review the help information, then enter the following command:
-Get-Process SQL* | Sort-Object Handles
+
+`Get-Process SQL* | Sort-Object Handles`
 7. Verify that the list is now sorted by number of handles.
 8. Close Windows PowerShell.
 
@@ -84,33 +96,44 @@ Get-Process SQL* | Sort-Object Handles
 1. In SQL Server Management Studio, in Object Explorer, right-click MIA-SQL, and then click Start PowerShell.
 1. Ignore any error about a PowerShell module.
 1. At the PowerShell prompt, enter the following command:
-Get-Module
+
+`Get-Module`
 1. Verify that the SQLPS module is not loaded. Then enter the following command to load it:
-Import-Module SQLPS -DisableNameChecking
+
+`Import-Module SQLPS -DisableNameChecking`
 1. At the PowerShell prompt, enter the following command:
-Get-Module
+
+`Get-Module`
 1. Verify that SQLPS and SQLASCMDLETS are listed.
 1. At the Windows PowerShell prompt, enter the following command:
-Set-location SQLServer:\SQL\MIA-SQL
+
+`Set-location SQLServer:\SQL\MIA-SQL`
 1. At the Windows PowerShell prompt, enter the following command to display the SQL Server database engine instances on the server:
-Get-ChildItem
+
+`Get-ChildItem`
 1. At the Windows PowerShell prompt, enter the following command:
-Set-location SQLServer:\SQL\MIA-SQL\DEFAULT\Databases
+
+`Set-location SQLServer:\SQL\MIA-SQL\DEFAULT\Databases`
 1. At the Windows PowerShell prompt, enter the following command to display the databases on the default instance:
-Get-ChildItem
+
+`Get-ChildItem`
 1. At the Windows PowerShell prompt, enter the following command:
-Invoke-Sqlcmd "SELECT @@version"
+
+`Invoke-Sqlcmd "SELECT @@version"`
 1. Review the version information.
 1. Close the SQL Server Powershell window and close SQL Server Management Studio without saving any files.
 
 ### Task 3: Create a PowerShell Script
 1. On the task bar, right-click the Windows PowerShell icon and click Windows PowerShell ISE.
 2. In the PowerShell command prompt, enter the following command:
-Get-Module
+
+`Get-Module`
 3. Verify that the SQLPS module is not loaded. Then enter the following command to load it:
-Import-Module SQLPS -DisableNameChecking
+
+`Import-Module SQLPS -DisableNameChecking`
 4. Enter the following command to verify that the SQLPS module is now loaded.
-Get-Module
+
+`Get-Module`
 5. If the Commands pane is not visible, on the View menu, click Show Command Add-on. Then in the Commands pane, in the Modules list, select SQLPS.
 6. View the cmdlets in the module, noting that they include cmdlets to perform tasks such as backing up databases and starting SQL Server instances.
 7. If the Script pane is not visible, click the Script drop-down arrow.
@@ -126,8 +149,10 @@ Get-Module
 10. Close the window, and modify the script as shown in the following example:
 
 `Import-Module SQLPS -DisableNameChecking`
-Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
-Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'
+
+`Set-location SQLServer:\SQL\MIA-SQL\Default\Databases`
+
+`Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'`
 11. Save the script as GetDatabases.ps1 in the D:\Labfiles\Lab01\Starter folder. Then close the PowerShell ISE.
 12. In the D:\Labfiles\Lab01\Starter folder, right-click GetDatabases.ps1 and click Run with PowerShell.
 13. When the script has completed, open Databases.txt in Notepad to view the results.
