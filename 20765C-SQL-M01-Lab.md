@@ -119,9 +119,9 @@ Get-Module
 Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
 Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-GridView`
 9. Click Run Script. Then view the results in the window that is opened. (The script may take a few minutes to run.)
-10. Close the window, and modify the script as shown in the following example:
-`Import-Module SQLPS -DisableNameChecking
-Set-location SQLServer:\SQL\MIA-SQL\Default\Databases
+10. Close the window, and modify the script as shown in the following example:  
+`Import-Module SQLPS -DisableNameChecking  
+Set-location SQLServer:\SQL\MIA-SQL\Default\Databases  
 Get-Childitem | Select Name, Size, SpaceAvailable, IndexSpaceUsage | Out-File 'D:\Labfiles\Lab01\Starter\Databases.txt'`
 11. Save the script as GetDatabases.ps1 in the D:\Labfiles\Lab01\Starter folder. Then close the PowerShell ISE.
 12. In the D:\Labfiles\Lab01\Starter folder, right-click GetDatabases.ps1 and click Run with PowerShell.
