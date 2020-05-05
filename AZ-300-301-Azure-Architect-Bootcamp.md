@@ -77,7 +77,7 @@ https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/m
 
 [AZ-301 Managing Security and Identity for Azure Solutions: Securing Secrets in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod01_Securing%20Secrets%20in%20Azure.md)
 
-## Relevant Exercises from AZ-103
+## Relevant Exercises from AZ-103 and AZ-500
 [Implement Directory Synchronization](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/09%20-%20Implement%20Directory%20Synchronization%20(az-100-05).md)
 
 [Azure AD Identity Protection](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/10a%20-%20Azure%20AD%20Identity%20Protection%20(az-101-04b).md)
@@ -87,3 +87,5 @@ https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/m
 [Role-Based Access Control](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/11a%20-%20Role-Based%20Access%20Control%20(az-100-01).md)
 
 [Implementing governance and compliance with Azure initiatives and resource locks](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/11b%20-%20Governance%20and%20Compliance%20(az-100-01b).md)
+
+[Azure Blueprints](https://github.com/MicrosoftLearning/AZ-500-Azure-Security/blob/master/Instructions/Labs/Module_2/LAB_20_Azure%20Blueprints.md)
