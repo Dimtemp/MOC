@@ -45,11 +45,13 @@
 
 [AZ-301 Comparing Database Options in Azure: Deploying Database Instances in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T02_Lab_Mod02_Deploying%20Database%20Instances%20in%20Azure.md)
 
-## Relevant Exercises from AZ-103
+## Relevant Exercises from AZ-103 and AZ-900
 
 [Implement and Manage Storage](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/03%20-%20Implement%20and%20Manage%20Storage%20(az-100-02).md)
 
 [Implement Azure File Sync](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/12%20-%20Implementing%20File%20Sync%20(az-100-02b).md)
+
+[Create a SQL database](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/05-Create%20a%20SQL%20database.md)
 
 
 # Day 4 Exercises: Containers and Serverless
