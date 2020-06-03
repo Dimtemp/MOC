@@ -1,4 +1,4 @@
-
+//Cmd 1
 //Connect to Azure Data Lake Storage Gen2 account
 
 spark.conf.set("fs.azure.account.auth.type", "OAuth")
@@ -7,26 +7,37 @@ spark.conf.set("fs.azure.account.oauth2.client.id.<storage-account-name>.dfs.cor
 spark.conf.set("fs.azure.account.oauth2.client.secret.<storage-account-name>.dfs.core.windows.net", "<authentication-key>")
 spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account-name>.dfs.core.windows.net", "https://login.microsoftonline.com/<tenant-id>/oauth2/token")
 
+
+//Cmd 2
 //Read JSON data in Azure Data Lake Storage Gen2 file system
 
 val df = spark.read.json("abfss://<file-system-name>@<storage-account-name>.dfs.core.windows.net/preferences.json")
 
+
+//Cmd 3
 //Show result of reading the JSON file
 
 df.show()
 
+
+//Cmd 4
 //Retrieve specific columns from a JSON dataset in Azure Data Lake Storage Gen2 file system
 
 val specificColumnsDf = df.select("firstname", "lastname", "gender", "location", "page")
 specificColumnsDf.show()
 
+
+//Cmd 5
 //Rename the page column to bike_preference
 
 val renamedColumnsDF = specificColumnsDf.withColumnRenamed("page", "bike_preference")
 renamedColumnsDF.show()
 
+
 //Transformations if time permits
+
 //Basic
 //https://github.com/MicrosoftDocs/mslearn-perform-basic-data-transformation-in-azure-databricks/blob/master/DBC/05.1-Basic-ETL.dbc?raw=true
+
 //Advanced
 //https://github.com/MicrosoftDocs/mslearn-perform-advanced-data-transformation-in-azure-databricks/blob/master/DBC/05.2-Advanced-ETL.dbc?raw=true
