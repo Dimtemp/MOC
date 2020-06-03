@@ -1,4 +1,4 @@
-New Item
+-- New Item
 {
    "id": "1",
    "productId": "33218896",
@@ -18,7 +18,7 @@ New Item
 
 
 
-New Item
+-- New Item
 {
     "id": "2",
     "productId": "33218897",
@@ -38,14 +38,14 @@ New Item
 
 
 
-New SQL Query
+-- New SQL Query
 SELECT *
 FROM Products p
 WHERE p.id ="1"
 
 
 
-New SQL Query
+-- New SQL Query
 SELECT
     p.id,
     p.manufacturer,
@@ -55,14 +55,14 @@ WHERE p.id ="1"
 
 
 
-New SQL Query
+-- New SQL Query
 SELECT p.price, p.description, p.productId
 FROM Products p
 ORDER BY p.price ASC
 
 
 
-New Stored Procedure
+-- New Stored Procedure
 function createMyDocument() {
     var context = getContext();
     var collection = context.getCollection();
@@ -85,7 +85,7 @@ function createMyDocument() {
 
 
 
-New UDF
+-- New UDF
 function producttax(price) {
     if (price == undefined) 
         throw 'no input';
@@ -102,5 +102,5 @@ function producttax(price) {
 
 
 
-New SQL Query
+-- New SQL Query
 SELECT c.id, c.productId, c.price, udf.producttax(c.price) AS producttax FROM c
