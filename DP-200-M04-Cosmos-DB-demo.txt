@@ -1,4 +1,13 @@
--- New Item
+<Cosmos DB>
+Add Container
+Database id: Products
+Throughput: 400
+Container id: Clothing
+Partition key: /productId
+
+
+
+New Item
 {
    "id": "1",
    "productId": "33218896",
