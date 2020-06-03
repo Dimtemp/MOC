@@ -1,23 +1,28 @@
 Create a Cosmos DB first.
 API: Core (SQL)
 
-
 <Cosmos DB>
-New Item
-{ "firstName": "Suzanne", "lastName": "Oneal", "company": "Microsoft" }
+Create Items container
+Open Data Explorer
 
 New Item
 { "firstName": "Suzanne", "lastName": "Oneal", "company": "Microsoft" }
 
 New Item
-{ "firstName": "Suzanne", "lastName": "Oneal", "company": "Microsoft" }
+{ "firstName": "Patrick", "lastName": "Johanssen", "company": "Microsoft", "salary": 5000 }
+
+New Item
+{ "firstName": "James", "lastName": "Mcdonald", "company": "ABC", "salary": 9000 }
 
 New SQL Query
 SELECT * FROM c
-SELECT c.id, c.firstName, c.lastName, c.isVested, c.company FROM c WHERE IS_DEFINED(c.isVested)
-SELECT c.id, c.firstName, c.lastName, c.age FROM c WHERE c.age > 20
 SELECT VALUE c.id FROM c
-SELECT VALUE { "badgeNumber": SUBSTRING(c.id, 0, 8), "company": c.company, "fullName": CONCAT(c.firstName, " ", c.lastName) } FROM c
+SELECT c.id, c.firstName, c.lastName, c.salary, c.company FROM c WHERE c.salary > 6000
+SELECT c.id, c.firstName, c.lastName, c.salary, c.company FROM c WHERE IS_DEFINED(c.salary)
+SELECT VALUE { "badgeNumber": SUBSTRING(c.id, 0, 8),
+"company": c.company,
+"fullName": CONCAT(c.firstName, " ", c.lastName) }
+FROM c
 
 
 <Cosmos DB>
@@ -28,6 +33,7 @@ Container id: Clothing
 Partition key: /productId
 
 
+Navigate to Products, Clothing, Items
 
 New Item
 {
@@ -69,6 +75,43 @@ New Item
 
 
 
+
+
+
+
+
+New Item
+{
+    "id": "3",
+    "productId": "74264420",
+    "category": "Vehicles",
+    "manufacturer": "Contoso",
+    "description": "Jetski",
+    "price": "5000",
+    "shipping": {
+        "weight": 1800,
+        "dimensions": {
+        "width": 70,
+        "height": 21,
+        "depth": 22
+        }
+    }
+}
+
+
+
+
+
+New SQL Query
+SELECT * FROM c
+
+
+
+New SQL Query
+SELECT * FROM Products p
+
+
+
 New SQL Query
 SELECT *
 FROM Products p
@@ -90,7 +133,7 @@ New SQL Query
 SELECT p.price, p.description, p.productId
 FROM Products p
 ORDER BY p.price ASC
-
+-- or DESC
 
 
 New Stored Procedure
@@ -113,6 +156,12 @@ function createMyDocument() {
         });
     if (!accepted) return;
 }
+
+
+
+Execute
+Input Parameters: type: string
+value: 33218898
 
 
 
