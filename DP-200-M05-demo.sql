@@ -1,12 +1,11 @@
 -- 1_Create_Database.sql
 CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
-    (
-        EDITION 			= 'DataWarehouse'
-    ,	SERVICE_OBJECTIVE 	= 'DW100'
-    ,	MAXSIZE 			= 1024 GB
-    );
-    
-    
+(
+	EDITION			= 'DataWarehouse'
+,	SERVICE_OBJECTIVE 	= 'DW100c'
+,	MAXSIZE 		= 1024 GB
+);
+
 
 
 
@@ -69,14 +68,14 @@ DROP TABLE [dbo].[FactSales];
 
 
 -- 1_Polybase_Load.sql
--- A: Create a master key.
+-- Create a master key.
 -- Only necessary if one does not already exist.
 -- Required to encrypt the credential secret in the next step.
 
 CREATE MASTER KEY;
 
 
--- B: Create a database scoped credential
+-- Create a database scoped credential
 -- IDENTITY: Provide any string, it is not used for authentication to Azure storage.
 -- SECRET: Provide your Azure storage account key.
 
@@ -84,19 +83,19 @@ CREATE MASTER KEY;
 CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
 WITH
     IDENTITY = 'MOCID',
-    SECRET = 'uKqRan5htV8q4oD/O+SAxQboL5MN8LhmjEZQ2ivjKOrOorQzLi33gH+C1m4ffqTcGNQN9PMluWmSYeXD/wBQhQ=='
+    SECRET = 'PasteYourStorageAccountAccessKey1'
 ;
 
 
--- C: Create an external data source
+-- Create an external data source
 -- TYPE: HADOOP - PolyBase uses Hadoop APIs to access data in Azure blob storage.
 -- LOCATION: Provide Azure storage account name and blob container name.
--- CREDENTIAL: Provide the credential created in the previous step.
+-- CREDENTIAL: Refer to the credential created in the previous step.
 
 CREATE EXTERNAL DATA SOURCE AzureStorage
 WITH (
     TYPE = HADOOP,
-    LOCATION = 'wasbs://data@awsastudcto.blob.core.windows.net',
+    LOCATION = 'wasbs://data@YourStorageAccountName.blob.core.windows.net',
     CREDENTIAL = AzureStorageCredential
 );
 
