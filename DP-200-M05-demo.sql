@@ -144,7 +144,7 @@ CREATE EXTERNAL TABLE dbo.DimDate2External (
 	[Day Of Month] decimal(38, 0) NULL
 )
 WITH (
-    LOCATION='/',
+    LOCATION='/DimDate2.txt',
     DATA_SOURCE=AzureStorage,
     FILE_FORMAT=TextFile
 );
