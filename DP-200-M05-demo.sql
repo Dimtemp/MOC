@@ -1,6 +1,6 @@
 -- Storage account name:
 -- Storage account key:
--- SSMS Source IP:
+-- SSMS Client IP:
 -- DW FQDN:
 
 
