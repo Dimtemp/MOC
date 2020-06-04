@@ -1,3 +1,10 @@
+-- Storage account name:
+-- Storage account key:
+-- SSMS Source IP:
+-- DW FQDN:
+
+
+
 -- 1_Create_Database.sql
 CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
 (
@@ -5,7 +12,12 @@ CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
 ,	SERVICE_OBJECTIVE 	= 'DW100c'
 ,	MAXSIZE 		= 1024 GB
 );
+GO
 
+
+
+USE DWDB;
+GO
 
 
 
