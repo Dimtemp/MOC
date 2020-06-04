@@ -1,7 +1,7 @@
--- Storage account name:
--- Storage account key:
--- SSMS Client IP:
--- DW FQDN:
+-- Storage account name: 
+-- Storage account key: 
+-- SSMS Client IP: 
+-- DW FQDN: 
 
 
 
@@ -47,7 +47,6 @@ CREATE TABLE [dbo].[Product](
 	[Class] [nvarchar](100) NULL,
 	[Style] [nvarchar](100) NULL
 ) 
-
 WITH
 (
 	CLUSTERED COLUMNSTORE INDEX
