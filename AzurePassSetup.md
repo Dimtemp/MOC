@@ -1,17 +1,16 @@
 # Preparing for the Labs
 
 ## You will need
-A modern web browser (Microsoft Edge, Google Chrome, Firefox, Safari)
+1. A modern web browser (Microsoft Edge, Google Chrome, Firefox, Safari)
 
 ## Activate your Azure Pass subscription
-Go to https://live.com and sign in using a *personal* Microsoft account
-For example, an outlook.com account. If you don't have one, create one.
+1. Go to https://live.com and sign in using a **personal** Microsoft account.
+* For example, an outlook.com account. If you don't have one, create one.
 :point_up: Don't sign in with a company account!
-
-After signing in, go to https://www.microsoftazurepass.com
-Start the process to activate an Azure Pass
-Enter the promo code provided for this course and activate the subscription
-Verify you can sign into the Azure portal at https://portal.azure.com
+1. After signing in, go to https://www.microsoftazurepass.com
+1. Start the process to activate an Azure Pass
+1. Enter the promo code provided for this course and activate the subscription
+1. Verify you can sign into the Azure portal at https://portal.azure.com
 
 ## Background information
 This Azure pass provides restricted access to Azure services for a limited time. Students must activate their Azure pass subscription using a Microsoft account (such as an outlook.com, live.com, or hotmail.com address) – if they don't already have a Microsoft account, they can sign up for one at https://live.com.
