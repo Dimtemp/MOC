@@ -1,3 +1,5 @@
+# DP-200 M04 Lab summary, no demo!
+
 <Cosmos DB>
 Add Container
 Database id: Products
