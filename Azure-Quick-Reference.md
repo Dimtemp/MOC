@@ -27,7 +27,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - E Memory optimized
 - F Compute optimized
 - G Large workload, up to 448 GB of RAM and 64 data disks
-- H High-performance computing
+- H High-performance computing, high troughput network adapters
 - L Storage optimized, low-latency
 - M In-memory workloads
 - N Deep learning, graphic rendering, video editing
