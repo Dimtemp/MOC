@@ -22,10 +22,10 @@ Defines the availability vs storage and access costs.
 ### Azure VM Sizes
 Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - A Basic, classic
-- B Burstable, economical
+- B Burstable, budget, economical
 - D General, Faster CPUs and local Hyper-V host SSD (temporary disk), Dv2 series: 35% faster CPU than D-series
-- E Memory optimized
-- F Compute optimized
+- E Memory optimized (relates to cpu to memory ratio)
+- F Compute optimized (relates to cpu to memory ratio)
 - G Large workload, up to 448 GB of RAM and 64 data disks
 - H High-performance computing, high troughput network adapters
 - L Storage optimized, low-latency
