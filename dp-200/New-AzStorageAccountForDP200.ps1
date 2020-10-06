@@ -6,10 +6,9 @@ This script creates prerequisite file for module 3 and later from the DP-200 tra
 Containers & files:
 \data\DimDate2.txt      required for Module 5: SQL and Synapse (DW)
 \logs\preferences.json  required for Module 3: Databricks
-\phonecalls
-\images
-\tweets
+\phonecalls             required for Module 6: stream analytics
 #>
+
 
 $rgName = 'dp200'
 $location = 'westeurope'
@@ -24,14 +23,14 @@ New-AzResourceGroup -Location $location -Name $rgName
 $available = Get-AzStorageAccountNameAvailability -Name $saName
 
 if ($available.NameAvailable) {
-# Create storage account, from lab: Std/V2/RA_GRS/Hot/HIERARCHICAL
-$s = New-AzStorageAccount -ResourceGroupName $rgName -Name $saName -SkuName Standard_LRS -Location $location -EnableHierarchicalNamespace $true
+    # Create storage account, from lab: Std/V2/RA_GRS/Hot/HIERARCHICAL
+    $s = New-AzStorageAccount -ResourceGroupName $rgName -Name $saName -SkuName Standard_LRS -Location $location -EnableHierarchicalNamespace $true
 
-# create containers
-$containers | ForEach-Object { New-AzStorageContainer -Name $_ -Context $s.Context }
+    # create containers
+    $containers | ForEach-Object { New-AzStorageContainer -Name $_ -Context $s.Context }
 
-# create files
-Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'data' -DestBlob (Split-Path $file1 -Leaf) -AbsoluteUri $file1
-Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'logs' -DestBlob (Split-Path $file2 -Leaf) -AbsoluteUri $file2
+    # create files
+    Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'data' -DestBlob (Split-Path $file1 -Leaf) -AbsoluteUri $file1
+    Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'logs' -DestBlob (Split-Path $file2 -Leaf) -AbsoluteUri $file2
 
 }
