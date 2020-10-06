@@ -9,10 +9,12 @@ Containers & files:
 \phonecalls             required for Module 6: stream analytics
 #>
 
+param(
+    $rgName = 'dp200',
+    $location = 'westeurope',
+    $saName = "dp200x$(Get-Random -Maximum 1000)"
+)
 
-$rgName = 'dp200'
-$location = 'westeurope'
-$saName = 'test'# "dp200x$(Get-Random)"
 $containers = 'data', 'logs', 'phonecalls'
 $file1 = 'https://raw.githubusercontent.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/master/Labfiles/Starter/DP-200.2/Static%20files/DimDate2.txt'
 $file2 = 'https://raw.githubusercontent.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/master/Labfiles/Starter/DP-200.2/logs/preferences.json'
@@ -20,9 +22,10 @@ $file2 = 'https://raw.githubusercontent.com/MicrosoftLearning/DP-200-Implementin
 New-AzResourceGroup -Location $location -Name $rgName
 
 # Check StorageAccountNameAvailability
-$available = Get-AzStorageAccountNameAvailability -Name $saName
+$saNameAvailable = Get-AzStorageAccountNameAvailability -Name $saName
 
-if ($available.NameAvailable) {
+if ($saNameAvailable.NameAvailable)
+{
     # Create storage account, from lab: Std/V2/RA_GRS/Hot/HIERARCHICAL
     $s = New-AzStorageAccount -ResourceGroupName $rgName -Name $saName -SkuName Standard_LRS -Location $location -EnableHierarchicalNamespace $true
 
@@ -32,5 +35,4 @@ if ($available.NameAvailable) {
     # create files
     Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'data' -DestBlob (Split-Path $file1 -Leaf) -AbsoluteUri $file1
     Start-AzStorageBlobCopy -DestContext $s.Context -DestContainer 'logs' -DestBlob (Split-Path $file2 -Leaf) -AbsoluteUri $file2
-
 }
