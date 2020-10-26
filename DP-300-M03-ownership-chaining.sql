@@ -1,4 +1,4 @@
--- prereq: AdventureWorks database
+-- prereq: using SSMS restore database from https://github.com/MicrosoftLearning/DP-300T00-Administering-Relational-Databases-on-Azure/blob/master/Allfiles/Labs/Secure%20Environment/AdventureWorks.bacpac
 -- create a user in the database
 CREATE USER [User1] WITH PASSWORD = 'Azur3Pa$$'
 GO
