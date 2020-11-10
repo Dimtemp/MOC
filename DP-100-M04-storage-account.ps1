@@ -1,3 +1,5 @@
+# use Connect-AzAccount or run this in a cloud shell
+
 # new storage account (LRS)
 $resourceGroup = 'ML-M04'
 $location = 'westeurope'
@@ -14,4 +16,4 @@ $ctx = $storageAccount.Context
 New-AzStorageContainer -Name $containerName -Context $ctx -Permission blob
 
 # Access keys: copy key
-Get-AzStorageAccountKey -ResourceGroupName x -Name x
+Get-AzStorageAccountKey -ResourceGroupName $resourceGroup -Name x
