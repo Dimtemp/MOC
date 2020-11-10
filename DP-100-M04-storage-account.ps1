@@ -16,5 +16,5 @@ New-AzStorageContainer -Name $containerName -Context $ctx -Permission blob
 
 # Access keys: copy key
 $key = Get-AzStorageAccountKey -ResourceGroupName $resourceGroup -Name $accountName
-$key[0].Value | Clip
-Write-Host 'The storage account key is available in your clipboard'
+Write-Host "This is the storage account key:"
+$key[0].Value
