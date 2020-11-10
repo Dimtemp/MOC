@@ -3,11 +3,15 @@ $resourceGroup = 'ML-M04'
 $location = 'westeurope'
 $accountName = "ML04$(Get-Random)"
 $SkuName = 'Standard_LRS'
+$containerName = 'aml-data'
 
 New-AzResourceGroup -Name $resourceGroup -Location $location
 
-New-AzStorageAccount -ResourceGroupName $resourceGroup -Name $accountName -Location $location -SkuName $SkuName -Kind StorageV2
+$storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroup -Name $accountName -Location $location -SkuName $SkuName -Kind StorageV2
 
-# New container: aml-data
+$ctx = $storageAccount.Context
+
+New-AzStorageContainer -Name $containerName -Context $ctx -Permission blob
 
 # Access keys: copy key
+Get-AzStorageAccountKey -ResourceGroupName x -Name x
