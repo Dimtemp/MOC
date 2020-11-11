@@ -28,3 +28,9 @@ C|Two-Class Decision Forest|
 C|Two-Class Logistic Regression|
 C|Two-Class Neural Network|
 C|Two Class Support Vector Machine|
+
+
+## More info
+- https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/module-reference
+- https://docs.microsoft.com/en-us/azure/machine-learning/how-to-select-algorithms
+- https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
