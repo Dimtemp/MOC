@@ -34,3 +34,4 @@ C|Two Class Support Vector Machine|
 - https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/module-reference
 - https://docs.microsoft.com/en-us/azure/machine-learning/how-to-select-algorithms
 - https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+- https://cheatography.com/lulu-0012/cheat-sheets/test-ml/
