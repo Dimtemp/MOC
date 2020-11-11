@@ -1,11 +1,11 @@
-# Azure Machine Learning Algorithms
+# Azure Machine Learning Designer Algorithms
 
-This table describes the 
+This table describes the different algorithms that are availabe in the Azure Machine Learning Designer service.
 
 ## Types
-R = Regression
-K = Clustering
-C = Classification
+- R = Regression
+- K = Clustering
+- C = Classification
 
 Type|Title
 ---|---
