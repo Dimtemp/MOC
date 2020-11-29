@@ -1,16 +1,16 @@
-
+$ResourceGroupName = 'DP200x929'
 
 Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName BlobQuery
 # optionally
 Register-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName BlobQuery
 
-$Keys = Get-AzStorageAccountKey -ResourceGroupName 'DP200' -Name 'DP200x929'
+$Keys = Get-AzStorageAccountKey -ResourceGroupName 'DP200' -Name $ResourceGroupName
 
 $t = New-TemporaryFile
 
 $inputconfig = New-AzStorageBlobQueryConfig -AsJson -RecordSeparator "`n"
 
-$ctx = New-AzStorageContext -StorageAccountName 'dp200x929' -StorageAccountKey $Keys.key1.Value  # -Anonymous
+$ctx = New-AzStorageContext -StorageAccountName $ResourceGroupName -StorageAccountKey $Keys.Value[0]  # -Anonymous
 
 $HashArguments = @{
     Container = 'logs'
