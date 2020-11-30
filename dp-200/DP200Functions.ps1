@@ -38,7 +38,13 @@ function New-AzStorageAccountForDP200Training {
     }
 }
 
+
 function New-AzRoleAssignmentForDP200Training {
+    <#
+    .SYNOPSIS
+    This function assigns the Storage Blob Data Contributor role to the user-specified principal on the user-specified resource group.
+    #>
+
     param(
         $ResourceGroupName = (Get-AzResourceGroup | Out-GridView -OutputMode Single -Title 'Select the resource group to assign permissions to').ResourceGroupName,
         $RoleName = (Get-AzRoleDefinition -Name 'Storage Blob Data Contributor').Name,
@@ -48,5 +54,42 @@ function New-AzRoleAssignmentForDP200Training {
     New-AzRoleAssignment -ObjectId $id.Id -RoleDefinitionName $RoleName -ResourceGroupName $ResourceGroupName
 }
 
-New-AzStorageAccountForDP200Training
-# only run this command to assign permissions to resource group: New-AzRoleAssignmentForDP200Training
+
+function Get-DP200Module3Details {
+    <#
+    .SYNOPSIS
+    This function displays several properties needed for Module 3 of the DP-200 training. To do: display the secret.
+    #>
+
+    param(
+         $SPName = 'dlaccess'
+    )
+
+
+    $tenant = Get-AzTenant | Out-GridView -OutputMode Single -Title 'Please select the correct tenant'
+
+    $id = Get-AzADServicePrincipal | where displayname -match dlaccess
+
+    $storage = Get-AzStorageAccount | Out-GridView -OutputMode Single -Title 'Please select the correct storage account'
+
+    $keys = Get-AzStorageAccountKey -ResourceGroupName $storage.ResourceGroupName -Name $storage.StorageAccountName
+
+    $properties = @{
+        AppId = $id.ApplicationId
+        TenantId = $tenant.Id
+        Key = $keys.value[0]
+    }
+
+    $o = New-Object psobject -Property $properties
+    Write-Output $o
+}
+
+# Run this command to create a storage account with the correct files required for all modules, except 1 and 2, for the DP-200 training.
+# New-AzStorageAccountForDP200Training
+
+# Run this command to get the required details when performing module 3:
+# Get-DP200Module3Details | FL
+
+# Run this command to assign permissions to resource group for module 3:
+# New-AzRoleAssignmentForDP200Training
+
