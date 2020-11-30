@@ -54,7 +54,6 @@ function New-AzRoleAssignmentForDP200Training {
     New-AzRoleAssignment -ObjectId $id.Id -RoleDefinitionName $RoleName -ResourceGroupName $ResourceGroupName
 }
 
-
 function Get-DP200Module3Details {
     <#
     .SYNOPSIS
@@ -78,6 +77,7 @@ function Get-DP200Module3Details {
     #Get-AzStorageContainer -Context $ctx.Context
 
     $properties = @{
+        StorageAccountName = $storage.StorageAccountName
         AppId = $id.ApplicationId
         TenantId = $tenant.Id
         # Key = $keys.value[0]
