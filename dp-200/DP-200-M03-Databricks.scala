@@ -1,14 +1,15 @@
 // Databricks notebook source
-//Cmd 0
-val storageAccountName = "dp200x984"
-val appID = "337d3233-a352-4b83-b3ac-1bedc659e270"
-val key = "V2N46.i-BL~zUV6Zg0.5nTIesWt6No1Vu7"
-val tenantID = "3bfe42d6-c684-45f5-97fb-40c905c1dfff"
+//Cmd 1
+// Optionally get or verify details with Get-DP200Module3Details function from https://github.com/Dimtemp/MOC/blob/master/dp-200/DP200Functions.ps1
+val storageAccountName = "storageAccountName"
+val appID = "GUID"
+val key = "key"
+val tenantID = "GUID"
 val fileSystemName = "logs"
 
 // COMMAND ----------
 
-//Cmd 1
+//Cmd 2
 //Connect to Azure Data Lake Storage Gen2 account
 
 spark.conf.set("fs.azure.account.auth.type", "OAuth")
@@ -19,7 +20,7 @@ spark.conf.set("fs.azure.account.oauth2.client.endpoint." + storageAccountName +
 
 // COMMAND ----------
 
-//Cmd 2
+//Cmd 3
 //Read JSON data in Azure Data Lake Storage Gen2 file system
 val df = spark.read.json("abfss://" + fileSystemName + "@" + storageAccountName + ".dfs.core.windows.net/preferences.json")
 //val df = spark.read.json("abfss://logs@dp200x984.dfs.core.windows.net/preferences.json")
@@ -27,14 +28,14 @@ val df = spark.read.json("abfss://" + fileSystemName + "@" + storageAccountName 
 
 // COMMAND ----------
 
-//Cmd 3
+//Cmd 4
 //Show result of reading the JSON file
 
 df.show()
 
 // COMMAND ----------
 
-//Cmd 4
+//Cmd 5
 //Retrieve specific columns from a JSON dataset in Azure Data Lake Storage Gen2 file system
 
 val specificColumnsDf = df.select("firstname", "lastname", "gender", "location", "page")
@@ -42,7 +43,7 @@ specificColumnsDf.show()
 
 // COMMAND ----------
 
-//Cmd 5
+//Cmd 6
 //Rename the page column to bike_preference
 
 val renamedColumnsDF = specificColumnsDf.withColumnRenamed("page", "bike_preference")
