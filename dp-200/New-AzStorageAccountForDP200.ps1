@@ -38,4 +38,15 @@ function New-AzStorageAccountForDP200Training {
     }
 }
 
+function New-AzRoleAssignmentForDP200Training {
+    param(
+        $ResourceGroupName = (Get-AzResourceGroup | Out-GridView -OutputMode Single -Title 'Select the resource group to assign permissions to').ResourceGroupName,
+        $RoleName = (Get-AzRoleDefinition -Name 'Storage Blob Data Contributor').Name,
+        $SPName = 'dlaccess'
+    )
+    $id = Get-AzADServicePrincipal | Where-Object displayname -match $SPName
+    New-AzRoleAssignment -ObjectId $id.Id -RoleDefinitionName $RoleName -ResourceGroupName $ResourceGroupName
+}
+
 New-AzStorageAccountForDP200Training
+# only run this command to assign permissions to resource group: New-AzRoleAssignmentForDP200Training
