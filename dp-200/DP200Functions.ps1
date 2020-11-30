@@ -74,15 +74,19 @@ function Get-DP200Module3Details {
 
     $keys = Get-AzStorageAccountKey -ResourceGroupName $storage.ResourceGroupName -Name $storage.StorageAccountName
 
+    #$ctx = Get-AzStorageAccount -ResourceGroupName $storage.ResourceGroupName
+    #Get-AzStorageContainer -Context $ctx.Context
+
     $properties = @{
         AppId = $id.ApplicationId
         TenantId = $tenant.Id
-        Key = $keys.value[0]
+        # Key = $keys.value[0]
     }
 
     $o = New-Object psobject -Property $properties
     Write-Output $o
 }
+
 
 # Run this command to create a storage account with the correct files required for all modules, except 1 and 2, for the DP-200 training.
 # New-AzStorageAccountForDP200Training
