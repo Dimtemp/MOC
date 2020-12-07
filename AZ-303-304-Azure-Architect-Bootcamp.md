@@ -37,13 +37,13 @@
 
 [AZ-301 4.3 Networking Azure Application Components: Deploying Network Infrastructure for Use in Azure Solutions](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T04_Lab_Mod03_Deploying%20Network%20Infrastructure%20for%20use%20in%20Azure%20Solutions.md)
 
-[Configure Azure DNS](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/04%20-%20Configure%20Azure%20DNS%20(az-100-04b).md)
+[AZ-103 Configure Azure DNS](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/04%20-%20Configure%20Azure%20DNS%20(az-100-04b).md)
 
-[VNet Peering and Service Chaining](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/05%20-%20VNet%20Peering%20and%20Service%20Chaining%20(az-100-04).md)
+[AZ-103 VNet Peering and Service Chaining](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/05%20-%20VNet%20Peering%20and%20Service%20Chaining%20(az-100-04).md)
 
-[Use Azure Network Watcher for monitoring and troubleshooting network connectivity](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/06%20-%20Azure%20Network%20Watcher%20(az-101-03b).md)
+[AZ-103 Use Azure Network Watcher for monitoring and troubleshooting network connectivity](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/06%20-%20Azure%20Network%20Watcher%20(az-101-03b).md)
 
-[Load Balancer and Traffic Manager](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/08%20-%20Load%20Balancer%20and%20Traffic%20Manager%20(az-101-03).md)
+[AZ-103 Load Balancer and Traffic Manager](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/08%20-%20Load%20Balancer%20and%20Traffic%20Manager%20(az-101-03).md)
 
 
 # Day 3 Exercises: Storage and Databases
