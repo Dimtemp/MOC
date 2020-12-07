@@ -29,6 +29,7 @@ Build the following resources in this order:
 1. Create a Shared Access Policy with Send permission.
 1. Open the Shared Access Policy and copy the **Connection string–primary key** to the clipboard.
 1. Open the RDP session you just minimized, and return to Notepad.
+    <add key="EventHubName" value="ctoo-phoneanalysis-eh"/>
 
 ### Process data in the Event Hub using Data Factory. Store it in both SQL DB and Cosmos DB.
 
