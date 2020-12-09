@@ -56,6 +56,8 @@
 
 ## Relevant Exercises from other trainings
 
+[DP-200 Implementing Cosmos DB](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/blob/master/instructions/dp-200-04_instructions.md)
+
 [AZ-300 Implementing and Managing Storage: Implementing Azure Storage access controls](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod01_Implementing%20Azure%20Storage%20access%20controls.md)
 
 [AZ-301 Comparing Database Options in Azure: Deploying Database Instances in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T02_Lab_Mod02_Deploying%20Database%20Instances%20in%20Azure.md)
