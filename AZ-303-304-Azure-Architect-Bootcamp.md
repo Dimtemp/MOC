@@ -60,14 +60,11 @@
 
 [AZ-300 Implementing and Managing Storage: Implementing Azure Storage access controls](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T03_Lab_Mod01_Implementing%20Azure%20Storage%20access%20controls.md)
 
-[AZ-301 Comparing Database Options in Azure: Deploying Database Instances in Azure](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T02_Lab_Mod02_Deploying%20Database%20Instances%20in%20Azure.md)
-
 [AZ-103 Implement and Manage Storage](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/03%20-%20Implement%20and%20Manage%20Storage%20(az-100-02).md)
 
 [AZ-103 Implement Azure File Sync](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/12%20-%20Implementing%20File%20Sync%20(az-100-02b).md)
 
-[AZ-900 Create a SQL database](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/05-Create%20a%20SQL%20database.md)
-
+[AZ-900 Create a SQL database](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/06-Create%20a%20SQL%20database.md)
 
 # Day 4 Exercises: PaaS, SaaS and microservices
 
