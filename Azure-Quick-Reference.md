@@ -124,6 +124,21 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 
 ## Azure resources on the web
 
+### Azure service URI's
+- onmicrosoft.com: Active Directory
+- cloudapp.net: VM
+- azurewebsites.net: website
+- blob.core.windows.net: blob storage
+- file.core.windows.net: file share
+- table.core.windows.net: table storage
+- queue.core.windows.net: queue storage
+- database.windows.net: SQL
+- trafficmanager.net: Traffic Manager
+- documents.azure.com: Cosmos DB
+- vault.azure.net: Azure Key vault
+- servicebus.windows.net: Azure Service Bus
+- azurecr.io: Container Registry
+
 ### Microsoft
 - https://azure.microsoft.com Azure frontpage
 - https://azure.microsoft.com/en-us/status/ Azure status
@@ -149,28 +164,11 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://azure.microsoft.com/en-us/resources/truly-consistent-hybrid-cloud-with-microsoft-azure/en-us/ - free whitepaper 2017
 - https://blogs.msdn.microsoft.com/microsoft_press/2016/09/01/free-ebook-microsoft-azure-essentials-fundamentals-of-azure-second-edition/ free ebook 2016
 
-
 ### Third party
 - https://azureprice.net/ Azure VM Comparison
 - http://azurestorage.azurewebsites.net Azure Storage web explorer
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
 - http://www.azurespeed.com/ Azure Latency Test
-
-
-### Azure service URI's
-- onmicrosoft.com: Active Directory
-- cloudapp.net: VM
-- azurewebsites.net: website
-- blob.core.windows.net: blob storage
-- file.core.windows.net: file share
-- table.core.windows.net: table storage
-- queue.core.windows.net: queue storage
-- database.windows.net: SQL
-- trafficmanager.net: Traffic Manager
-- documents.azure.com: Cosmos DB
-- vault.azure.net: Azure Key vault
-- servicebus.windows.net: Azure Service Bus
-
 
 ### Training and Learning
 - https://www.pluralsight.com/partners/microsoft/azure Pluralsight and Microsoft have partnered to help become an expert in Azure. With skill assessments and over 130 courses across three Azure roles, you can focus your time on understanding your strengths and skill gaps and learn Azure as quickly as possible.
