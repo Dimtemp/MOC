@@ -77,8 +77,6 @@
 
 ## Relevant Exercises from other trainings
 
-[AZ-300 Implementing and Managing Application Services: Implementing Azure Logic Apps](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T04_Lab_Mod01_Implementing%20Azure%20Logic%20Apps.md)
-
 [AZ-301 Integrating SaaS Services Available on the Azure Platform: Deploying Service Instances as Components of Overall Azure Solutions](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod02_Deploying%20Service%20Instances%20as%20Components%20of%20Overall%20Azure%20Solutions.md)
 
 [AZ-301 Authoring Serverless Applications in Azure: Deploying Serverless Workloads to Azure](
