@@ -27,9 +27,9 @@
 
 # Day 2 Exercises: Networking
 
-[Create a virtual network](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/04-Create%20a%20virtual%20network.md)
+[AZ-900 Lab 4 Create a virtual network](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/04-Create%20a%20virtual%20network.md)
 
-[Secure network traffic](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/13-Secure%20network%20traffic.md)
+[AZ-900 Lab 13 Secure network traffic](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals/blob/master/Instructions/Walkthroughs/13-Secure%20network%20traffic.md)
 
 
 [AZ-300 Lab 2.3 Configuring and Managing Virtual Networks: VNet peering and service chaining](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T02_Lab_Mod03_Configuring%20VNet%20peering%20and%20service%20chaining.md)
