@@ -70,15 +70,14 @@
 
 [AZ-303 Lab 14A Implementing an Azure App Service Web App with a Staging Slot](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies/blob/master/Instructions/Labs/Module_14_Lab_a.md)
 
+[AZ-303 Lab 14B Configuring a Message-Based Integration Architecture](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies/blob/master/Instructions/Labs/Module_14_Lab_b.md)
+
 [AZ-304 Lab 13a Implement Azure Logic Apps integration with Azure Event Grid](https://github.com/MicrosoftLearning/AZ-304-Microsoft-Azure-Architect-Design/blob/master/Instructions/Labs/Module_13_Lab_a.md)
 
-[AZ-303 Lab 14B Configuring a Message-Based Integration Architecture](https://github.com/MicrosoftLearning/AZ-303-Microsoft-Azure-Architect-Technologies/blob/master/Instructions/Labs/Module_14_Lab_b.md)
 
 ## Relevant Exercises from other trainings
 
 [AZ-300 Implementing and Managing Application Services: Implementing Azure Logic Apps](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T04_Lab_Mod01_Implementing%20Azure%20Logic%20Apps.md)
-
-[AZ-300 Developing for the cloud: Configuring a Message-Based Integration Architecture](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies/blob/master/Instructions/AZ-300T06_Lab_Mod01_Configuring%20a%20Message-Based%20Integration%20Architecture.md)
 
 [AZ-301 Integrating SaaS Services Available on the Azure Platform: Deploying Service Instances as Components of Overall Azure Solutions](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign/blob/master/Instructions/AZ-301T01_Lab_Mod02_Deploying%20Service%20Instances%20as%20Components%20of%20Overall%20Azure%20Solutions.md)
 
