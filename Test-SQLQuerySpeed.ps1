@@ -41,7 +41,7 @@ for ($i=0; $i -lt $iterations; $i++) {
     # $data.Tables   # $data.Tables[0]
 
     $timespan = New-TimeSpan $start
-    $msg = "Time taken: {0}" -f $timespan
+    $msg = "{0}  Time taken: {1}" -f (Get-Date), $timespan
     if ($timespan.TotalSeconds -gt 1) {
         Write-Host $msg -ForegroundColor Yellow
     } else {
