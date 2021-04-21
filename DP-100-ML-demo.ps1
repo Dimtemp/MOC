@@ -4,16 +4,18 @@
 $uri = 'https://github.com/csymarcia/Melbourne_housing_FULL/raw/master/Melbourne_housing_FULL.csv'
 $pythonFilename = 'Melbourne_housing.py'
 
-# Chocolatey  install
+# enable Tls12, required for Chocolatey and CSV download
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-# install anaconda3
-choco install miniconda3
 
 # download csv file
 $OutFile = "$HOME\Downloads\$(Split-Path $uri -Leaf)"
 Invoke-WebRequest -Uri $uri -OutFile $OutFile
+
+# Chocolatey  install
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# install anaconda3
+choco install miniconda3
 
 # train model in Python
 $pythonscript = @'
