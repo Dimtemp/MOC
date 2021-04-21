@@ -68,3 +68,4 @@ print("Test Set Mean Absolute Error: %.2f" % mae_test)
 
 $pythonscript | Out-File "$HOME\Documents\$pythonFilename"
 
+# in python: conda activate myenv
