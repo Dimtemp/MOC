@@ -154,6 +154,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://docs.microsoft.com/en-us/archive/blogs/tangent_thoughts/bookmark-this-aka-msazureshortcuts Azure Shortcuts
 
 ### Free ebooks and whitepapers (by year of release)
+- https://azure.microsoft.com/en-us/resources/azure-networking-cookbook/ free ebook 2020
 - https://gallery.technet.microsoft.com/Inside-the-Operations-2928e342 free ebook 2019
 - https://azure.microsoft.com/en-us/resources/azure-for-architects/ free ebook 2019
 - https://azure.microsoft.com/en-us/resources/principles-of-data-science/ 2019
