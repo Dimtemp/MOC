@@ -7,6 +7,9 @@ Get-WmiObject win32_service | where name -match wu
 # inspect telnet client
 Get-WindowsFeature t*
 
+# inspect resource syntax
+Get-DscResource -Name File -Syntax
+group
 
 
 Configuration DscResourceTest {
