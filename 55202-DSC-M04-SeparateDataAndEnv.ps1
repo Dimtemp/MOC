@@ -39,3 +39,7 @@ $MyData =
 
 MyDscConfiguration -ConfigurationData $MyData -Output C:\DataTest
 Run-DscConfiguration C:\DataTest
+
+
+# more info
+# https://docs.microsoft.com/en-us/powershell/scripting/dsc/configurations/separatingenvdata?view=powershell-7.1
