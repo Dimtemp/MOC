@@ -8,7 +8,7 @@ Install-Module -Name xPSDesiredStateConfiguration -RequiredVersion 3.13.0.0
 # optionally: Register-PSRepository -Default / Install-PackageProvider nuget
 
 
-### Create pull server
+### Create pull server #################################
 
 configuration Sample_xDscWebService 
 { 
@@ -78,8 +78,7 @@ Get-Content $env:ProgramFiles\WindowsPowerShell\DscService\RegistrationKeys.txt 
 
 
 
-###################################################
-# Setting up a Pull Client 
+### Setting up a Pull Client  ###################################
 
 [DSCLocalConfigurationManager()]      
 configuration LocalHostLCMConfig
