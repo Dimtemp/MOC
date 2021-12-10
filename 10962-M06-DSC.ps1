@@ -1,58 +1,63 @@
+# Prep
 # enable DSC log
 wevtutil.exe set-log "Microsoft-Windows-Dsc/Analytic" /q:true /e:true
 # don't forget to enable Debug and Analytical logs in EventVwr
 
+mkdir C:\DscTest
+
+# zip some files in C:\DscTest\ArchiveTest.zip
+
 # inspect service
-Get-WmiObject win32_service | where name -match wu
+Get-WmiObject win32_service | where name -match wuauserv
 
 # inspect telnet client
 Get-WindowsFeature t*
 
 # inspect resource syntax
-Get-DscResource -Name File -Syntax   # ook met o.a. group
+Get-DscResource -Name User -Syntax   # demo file, group, user, ...
 
 
 Configuration DscResourceTest {
-    Import-DscResource –ModuleName  'PSDesiredStateConfiguration'
+    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
       Node localhost {
 
         Archive ArchiveExample {
             Ensure = 'Present'
-            Path = "C:\DscTest\Test.zip"
-            Destination = "C:\DscTest\ExtractionPath"
+            Path = 'C:\DscTest\ArchiveTest.zip'
+            Destination = 'C:\DscTest\ExtractionPath'
         }
 
-        Environment EnvironmentExample
-        {
+        Environment EnvironmentExample {
             Ensure = 'Present'
-            Name = "DSCEnvironmentVariable"
-            Value = "TestValue"
+            Name = 'DSCEnvironmentVariable'
+            Value = 'DscValue'
         }
 
-        File DirectoryCopy
-        {
-             Ensure = "Present"
-             Type = "Directory" # Default is "File".
-             Recurse = $true
-             SourcePath = "C:\DscTest\DemoSource"
-             DestinationPath = "C:\DscDestination\"
+
+        File DirectoryCopy {
+             Ensure = 'Present'
+             Type = 'File'   # Default is 'File'
+             Recurse = $false
+             SourcePath = 'C:\Windows\win.ini'
+             DestinationPath = 'C:\DscTest\Destination\'
+             #MatchSource = $true
         }
     
-        Log LogExample
-        {
+        Log LogExample {
             Message = 'message for Microsoft-Windows-Desired State Configuration/Analytic event log'
         }
 
-        Package PackageExample
-        {
-            Ensure = "Present"  # You can also set Ensure to "Absent"
-            Path  = "$Env:SystemDrive\DscTest\7zip.msi"
-            Name = '7-zip'
-            ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
+
+        Package PackageExample {
+            Ensure = 'Present'
+            Path  = 'C:\DscTest\7z2106-x64.msi'
+            Name = '7-Zip 21.06 (x64 edition)'
+            ProductId = '23170F69-40C1-2702-2106-000001000000'
+            DependsOn = '[Script]ScriptExample'
         }
 
-        Registry RegistryExample
-        {
+
+        Registry RegistryExample {
             Ensure = 'Present'
             Key = 'HKEY_LOCAL_MACHINE\SOFTWARE\DscTestKey'
             ValueName = 'TestValue'
@@ -60,69 +65,70 @@ Configuration DscResourceTest {
         }
 
 
-        Script ScriptExample
-        {
+        Script ScriptExample {
             SetScript = {
-                # from 55202 demo
-                $sw = New-Object System.IO.StreamWriter("C:\DscTest\TestFile.txt")
-                $sw.WriteLine("Some sample string")
-                $sw.Close()
+                # download 7zip
+                Invoke-WebRequest -UseBasicParsing -Uri 'https://www.7-zip.org/a/7z2106-x64.msi' -OutFile 'C:\DscTest\7z2106-x64.msi'
             }
             TestScript = {
-                Test-Path "C:\DscTest\TestFile.txt" 
+                Test-Path 'C:\DscTest\7z2106-x64.msi'
             }
-            GetScript = { <# This must return a hash table #> }         
+            GetScript = {
+                <# This must return a hash table #>
+            } 
         }
 
-        Service ServiceExample
-        {
+        Service ServiceExample {
             Name = 'wuauserv'
-            StartupType = 'Manual'
+            StartupType = 'Automatic'
             State = 'Running'
         }
 
-        User UserExample
-        {
+
+        Group GroupExample {
             Ensure = 'Present'
-            UserName = 'DscUser'
-            #Password = $passwordCred
-            DependsOn = '[Group]GroupExample'
+            GroupName = 'DscGroup'
+            Description = 'DSC test group'
+            Members = 'DscUser'
+            #MembersToInclude
+            DependsOn = '[User]UserExample'
         }
 
 
-        Group GroupExample
-        {
+        User UserExample {
             Ensure = 'Present'
-             GroupName = 'DscGroup'
-             Description = 'DSC test group'
-            #members
-            #MembersToInclude
-         }
+            UserName = 'DscUser'
+            Description = 'DSC test user'
+            #Password = $passwordCred
+            #DependsOn = '[Group]GroupExample'
+        }
 
 
-        WindowsFeature RoleExample
-        {
+        WindowsFeature RoleExample {
             Ensure = 'Present'
             Name = 'telnet-client'
         }
 
-        WindowsProcess Notepad
-        {
-            Arguments = '-d'
+        WindowsProcess ProcessExample {
             Path = 'notepad.exe'
+            Arguments = '-d'
             Ensure = 'Present'
             # WorkingDirectory = 'c:\'
         }
-
-}   # localhost
+    }
 }   # SecondTestConfig
 
+
 # run it
-DscResourceTest -output c:\DscResourceTest
-Start-DscConfiguration c:\DscResourceTest -Wait -Verbose
+DscResourceTest -output c:\DscTest
+Start-DscConfiguration c:\DscTest -Wait -Verbose -Force
+
 
 # inspect
-regedit
-Get-WmiObject win32_service | where name -match wu
+Get-ChildItem HKLM:\SOFTWARE   # or regedit.exe
+Get-WmiObject win32_service | where name -match wuauserv
 Get-WindowsFeature t*
+Get-LocalUser
+Get-LocalGroup | Sort
+Get-LocalGroupMember DscGroup
 EventVwr
