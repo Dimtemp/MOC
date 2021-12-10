@@ -1,3 +1,5 @@
+# CHECK: Log resource, File resource. Not working.
+
 # Prep
 # enable DSC log
 wevtutil.exe set-log "Microsoft-Windows-Dsc/Analytic" /q:true /e:true
