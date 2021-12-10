@@ -9,8 +9,7 @@ Get-WmiObject win32_service | where name -match wu
 Get-WindowsFeature t*
 
 # inspect resource syntax
-Get-DscResource -Name File -Syntax
-group
+Get-DscResource -Name File -Syntax   # ook met o.a. group
 
 
 Configuration DscResourceTest {
@@ -18,15 +17,15 @@ Configuration DscResourceTest {
       Node localhost {
 
         Archive ArchiveExample {
-            Ensure = "Present"
-            Path = "C:\Users\Public\Documents\Test.zip"
-            Destination = "C:\Users\Public\Documents\ExtractionPath"
+            Ensure = 'Present'
+            Path = "C:\DscTest\Test.zip"
+            Destination = "C:\DscTest\ExtractionPath"
         }
 
         Environment EnvironmentExample
         {
-            Ensure = "Present"  # You can also set Ensure to "Absent"
-            Name = "DSCTestEnvironmentVariable"
+            Ensure = 'Present'
+            Name = "DSCEnvironmentVariable"
             Value = "TestValue"
         }
 
@@ -35,19 +34,10 @@ Configuration DscResourceTest {
              Ensure = "Present"
              Type = "Directory" # Default is "File".
              Recurse = $true
-             SourcePath = "C:\Users\Public\Documents\DSCDemo\DemoSource"
-             DestinationPath = "C:\Users\Public\Documents\DSCDemo\DemoDestination"   
+             SourcePath = "C:\DscTest\DemoSource"
+             DestinationPath = "C:\DscDestination\"
         }
     
-        Group GroupExample
-        {
-            Ensure = 'Present'
-             GroupName = 'TestGroup'
-             Description = 'DSC test group'
-            #members
-            #MembersToInclude
-         }
-
         Log LogExample
         {
             Message = 'message for Microsoft-Windows-Desired State Configuration/Analytic event log'
@@ -56,15 +46,15 @@ Configuration DscResourceTest {
         Package PackageExample
         {
             Ensure = "Present"  # You can also set Ensure to "Absent"
-            Path  = "$Env:SystemDrive\TestFolder\TestProject.msi"
-            Name = "TestPackage"
+            Path  = "$Env:SystemDrive\DscTest\7zip.msi"
+            Name = '7-zip'
             ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
         }
 
         Registry RegistryExample
         {
             Ensure = 'Present'
-            Key = 'HKEY_LOCAL_MACHINE\SOFTWARE\ExampleKey'
+            Key = 'HKEY_LOCAL_MACHINE\SOFTWARE\DscTestKey'
             ValueName = 'TestValue'
             ValueData = 123
         }
@@ -73,11 +63,14 @@ Configuration DscResourceTest {
         Script ScriptExample
         {
             SetScript = {
-                $sw = New-Object System.IO.StreamWriter("C:\TempFolder\TestFile.txt")
+                # from 55202 demo
+                $sw = New-Object System.IO.StreamWriter("C:\DscTest\TestFile.txt")
                 $sw.WriteLine("Some sample string")
                 $sw.Close()
             }
-            TestScript = { Test-Path "C:\TempFolder\TestFile.txt" }
+            TestScript = {
+                Test-Path "C:\DscTest\TestFile.txt" 
+            }
             GetScript = { <# This must return a hash table #> }         
         }
 
@@ -90,11 +83,21 @@ Configuration DscResourceTest {
 
         User UserExample
         {
-            Ensure = "Present"
-            UserName = "UserNameExample"
+            Ensure = 'Present'
+            UserName = 'DscUser'
             #Password = $passwordCred
-            DependsOn = “[Group]GroupExample"
+            DependsOn = '[Group]GroupExample'
         }
+
+
+        Group GroupExample
+        {
+            Ensure = 'Present'
+             GroupName = 'DscGroup'
+             Description = 'DSC test group'
+            #members
+            #MembersToInclude
+         }
 
 
         WindowsFeature RoleExample
@@ -103,12 +106,12 @@ Configuration DscResourceTest {
             Name = 'telnet-client'
         }
 
-        WindowsProcess [string] #ResourceName
+        WindowsProcess Notepad
         {
             Arguments = '-d'
-            Path = notepad.exe
-            Ensure = Present
-            WorkingDirectory = "c:\"
+            Path = 'notepad.exe'
+            Ensure = 'Present'
+            # WorkingDirectory = 'c:\'
         }
 
 }   # localhost
