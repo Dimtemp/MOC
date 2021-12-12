@@ -166,6 +166,7 @@ Source: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes
 - https://blogs.msdn.microsoft.com/microsoft_press/2016/09/01/free-ebook-microsoft-azure-essentials-fundamentals-of-azure-second-edition/ free ebook 2016
 
 ### Third party
+- https://azurecharts.com/ Overview of Azure services. Linked directly to Azure Service 360° for service summary information
 - https://azureprice.net/ Azure VM Comparison
 - http://azurestorage.azurewebsites.net Azure Storage web explorer
 - https://azurespeedtest.azurewebsites.net/ Azure Speed Test 2.0
