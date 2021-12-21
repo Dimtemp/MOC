@@ -20,15 +20,20 @@ GO
 -- Include the actual execution plan by pressing Ctrl-M
 
 -- Retrieve the data and inspect the execution plan
-SELECT * FROM PhoneLog
-WHERE CallDurationMs = 10
+-- You might want to change the value to retrieve actual results
+SELECT * FROM dbo.PhoneLog
+WHERE CallDurationMs = 100
 
 -- Create an index
-CREATE NONCLUSTERED INDEX MyIndex ON PhoneLog ( CallDurationMs ASC )
+CREATE NONCLUSTERED INDEX MyIndex ON dbo.PhoneLog ( CallDurationMs ASC )
 
 -- Retrieve the data and inspect the execution plan
-SELECT * FROM PhoneLog
-WHERE CallDurationMs = 10
+SELECT * FROM dbo.PhoneLog
+WHERE CallDurationMs = 100
 
 -- Drop the index
-DROP INDEX MyIndex ON PhoneLog
+DROP INDEX MyIndex ON dbo.PhoneLog
+
+-- Drop the table
+DROP TABLE dbo.PhoneLog
+
