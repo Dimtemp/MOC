@@ -69,6 +69,7 @@ database_id object_id   index_id    partition_number index_type_desc            
 
 -- Rebuild the table and its indexes
 ALTER INDEX ALL ON dbo.PhoneLog REBUILD;
+-- or REORGANIZE
 GO
 
 -- Check the fragmentation again
