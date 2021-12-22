@@ -1,7 +1,6 @@
--- Create a table with a primary key
-USE Adventureworks;
-GO
+-- This demo works on SQL Server and Azure SQL DB
 
+-- Create a table with a primary key
 CREATE TABLE dbo.PhoneLog
 ( PhoneLogID int IDENTITY(1,1) PRIMARY KEY,
   LogRecorded datetime2 NOT NULL,
@@ -13,7 +12,7 @@ GO
 -- Insert some data into the table
 SET NOCOUNT ON;
 DECLARE @Counter int = 0;
-WHILE @Counter < 10000 BEGIN
+WHILE @Counter < 1000 BEGIN
   INSERT dbo.PhoneLog (LogRecorded, PhoneNumberCalled, CallDurationMs)
     VALUES(SYSDATETIME(),'999-9999',CAST(RAND() * 1000 AS int));
   SET @Counter += 1;
@@ -44,7 +43,7 @@ GO
 -- Modify the data in the table 
 SET NOCOUNT ON;
 DECLARE @Counter int = 0;
-WHILE @Counter < 10000 BEGIN
+WHILE @Counter < 1000 BEGIN
   UPDATE dbo.PhoneLog SET PhoneNumberCalled = REPLICATE('9',CAST(RAND() * 100 AS int))
     WHERE PhoneLogID = @Counter % 10000;
   IF @Counter % 100 = 0 PRINT @Counter;
