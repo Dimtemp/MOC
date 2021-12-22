@@ -1,4 +1,9 @@
--- depends on WWI database
+-- depends on WideWorldImporters database
+-- Optionally download with PowerShell:
+-- [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+-- Invoke-WebRequest -uri https://github.com/microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak -outfile C:\WideWorldImporters-Full.bak
+-- RESTORE DATABASE ...
+
 USE WideWorldImporters
 
 -- turn on live statistics
