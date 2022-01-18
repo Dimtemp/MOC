@@ -4,6 +4,7 @@ $DBName = 'AdventureWorks2017.bak'
 $query = "RESTORE DATABASE AdventureWorks2017 FROM DISK = '$(Join-Path $DestDir 'AdventureWorks2017.bak')' WITH MOVE 'AdventureWorks2017' TO '$(Join-Path $DestDir 'AdventureWorks2017.mdf')', MOVE 'AdventureWorks2017_Log' TO '$(Join-Path $DestDir 'AdventureWorks2017_log.ldf')';"
 $Activity = 'preparing DP300 demo env'
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12   # not required for w2019
 mkdir $DestDir
 
 Write-Progress -Activity $Activity -Status "Downloading $DBName"
@@ -13,7 +14,7 @@ Write-Progress -Activity $Activity -Status 'Downloading archive from GitHub'
 Start-BitsTransfer -Source 'https://github.com/MicrosoftLearning/DP-300T00-Administering-Relational-Databases-on-Azure/archive/refs/heads/master.zip' -Destination 'C:\AdventureWorks\dp300.zip'
 
 Write-Progress -Activity $Activity -Status 'Expanding archive'
-Expand-Archive -Path 'C:\AdventureWorks\dp300.zip' -Destination "$Home\Desktop"
+Expand-Archive -Path 'C:\AdventureWorks\dp300.zip' -Destination $DestDir
 
 Write-Progress -Activity $Activity -Status 'Restoring database'
 Invoke-Sqlcmd -Query $query
