@@ -1,8 +1,18 @@
 -- depends on WideWorldImporters database
--- Optionally download with PowerShell:
--- [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
--- Invoke-WebRequest -uri https://github.com/microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak -outfile C:\WideWorldImporters-Full.bak
--- RESTORE DATABASE ...
+-- Optionally download with PowerShell
+-- Check D: and E: disks for existence
+-- mkdir D:\Data
+-- mkdir E:\Log
+-- mkdir C:\WWI
+-- [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12   # niet nodig in w2019
+-- Start-BitsTransfer -Source 'https://github.com/microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak' -Destination 'C:\WWI\WideWorldImporters-Full.bak'
+-- RESTORE DATABASE WideWorldImporters FROM DISK = 'C:\WWI\WideWorldImporters-Full.bak' 
+--'WWI_Primary' cannot be restored to 'D:\Data\WideWorldImporters.mdf'. Use WITH MOVE to identify a valid location for the file.
+--'WWI_UserData' cannot be restored to 'D:\Data\WideWorldImporters_UserData.ndf'. Use WITH MOVE to identify a valid location for the file.
+--'WWI_Log' cannot be restored to 'E:\Log\WideWorldImporters.ldf'. Use WITH MOVE to identify a valid location for the file.
+--'WWI_InMemory_Data_1' cannot be restored to 'D:\Data\WideWorldImporters_InMemory_Data_1'. Use WITH MOVE to identify a valid location for the file.
+
+
 
 USE WideWorldImporters
 
