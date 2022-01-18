@@ -1,23 +1,30 @@
 -- This demo works on SQL Server and Azure SQL DB
 
+
 -- Create a table with a primary key
 CREATE TABLE dbo.PhoneLog
 ( PhoneLogID int IDENTITY(1,1) PRIMARY KEY,
   LogRecorded datetime2 NOT NULL,
   PhoneNumberCalled nvarchar(100) NOT NULL,
-  CallDurationMs int NOT NULL
+  CallDurationSec int NOT NULL
 );
 GO
+
 
 -- Insert some data into the table
 SET NOCOUNT ON;
 DECLARE @Counter int = 0;
 WHILE @Counter < 1000 BEGIN
-  INSERT dbo.PhoneLog (LogRecorded, PhoneNumberCalled, CallDurationMs)
+  INSERT dbo.PhoneLog (LogRecorded, PhoneNumberCalled, CallDurationSec)
     VALUES(SYSDATETIME(),'999-9999',CAST(RAND() * 1000 AS int));
   SET @Counter += 1;
 END;
 GO
+
+
+-- Inspect table
+SELECT * FROM dbo.PhoneLog
+
 
 -- Check fragmentation
 SELECT * 
@@ -50,6 +57,11 @@ WHILE @Counter < 1000 BEGIN
   SET @Counter += 1;
 END;
 
+
+-- Inspect table
+SELECT * FROM dbo.PhoneLog
+
+
 -- Re-check fragmentation
 SELECT * 
 FROM sys.dm_db_index_physical_stats(DB_ID(),
@@ -69,8 +81,10 @@ database_id object_id   index_id    partition_number index_type_desc            
 
 -- Rebuild the table and its indexes
 ALTER INDEX ALL ON dbo.PhoneLog REBUILD;
+-- or REBUILD WITH (ONLINE = ON);
 -- or REORGANIZE
 GO
+
 
 -- Check the fragmentation again
 SELECT * 
@@ -80,6 +94,7 @@ FROM sys.dm_db_index_physical_stats(DB_ID(),
                                     NULL,
                                     'DETAILED');
 GO
+
 
 /*
 database_id object_id   index_id    partition_number index_type_desc                                              alloc_unit_type_desc                                         index_depth index_level avg_fragmentation_in_percent fragment_count       avg_fragment_size_in_pages page_count           avg_page_space_used_in_percent record_count         ghost_record_count   version_ghost_record_count min_record_size_in_bytes max_record_size_in_bytes avg_record_size_in_bytes forwarded_record_count compressed_page_count hobt_id              columnstore_delete_buffer_state columnstore_delete_buffer_state_desc
