@@ -6,6 +6,7 @@ A listing of (suspect) cloud datacenters with their street address and/or Google
 |-----------|---------|------|------------------------------|---------|
 | Europe | Netherlands | Azure West Europe | Q28Q+J7 Middenmeer, Netherlands | Construction of Microsoft Azure Datacenter West Europe: https://youtu.be/oegdguPP5Os |
 | Europe | Ireland | Azure North Europe | 8GFW+V3 Lucan, County Dublin, Ireland | and/or Leopardstown, Dublin, Ireland |
+| Europe | Germany | Azure Germany? | 8GFW+V3 Wilhelm-Fay-Straße 15, 65936 Frankfurt am Main, Germany |  |
 | North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
 | North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
