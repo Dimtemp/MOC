@@ -1,3 +1,5 @@
+-- SQL script from DP-300 M02 lab
+
 CREATE USER [DP300User1] WITH PASSWORD = 'Azur3Pa$$';
 GO
 
