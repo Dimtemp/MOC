@@ -1,4 +1,5 @@
--- Prereq: SalesLT schema with Customer* and Address* tables
+-- Deploy an Azure SQL DB using the SAMPLE database.
+-- Prereq: SalesLT schema with Customer* and Address* tables.
 
 -- Run this query 3 times against the database
 DECLARE @Counter INT 
