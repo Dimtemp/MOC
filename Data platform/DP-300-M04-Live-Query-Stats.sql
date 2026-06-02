@@ -12,7 +12,7 @@
 --'WWI_Log' cannot be restored to 'E:\Log\WideWorldImporters.ldf'. Use WITH MOVE to identify a valid location for the file.
 --'WWI_InMemory_Data_1' cannot be restored to 'D:\Data\WideWorldImporters_InMemory_Data_1'. Use WITH MOVE to identify a valid location for the file.
 
-
+ 
 
 USE WideWorldImporters
 
