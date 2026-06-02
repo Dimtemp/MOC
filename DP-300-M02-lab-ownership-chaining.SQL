@@ -1,4 +1,5 @@
 -- SQL script from DP-300 M02 lab
+-- prereq: SalesLT schema with tables: Product, SalesOrderDetail, SalesOrderHeader 
 
 CREATE USER [DP300User1] WITH PASSWORD = 'Azur3Pa$$';
 GO

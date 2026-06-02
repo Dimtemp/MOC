@@ -1,0 +1,37 @@
+-- Deploy an Azure SQL DB using the SAMPLE database.
+-- Prereq: SalesLT schema with Customer* and Address* tables.
+-- Best to run this query before starting the chapter.
+-- Optionally reduce the counter before starting the query to determine query runlength. Counter on 1000 needs more than 2 minutes with a 5 DTU DB.
+
+-- Run this query 3 times against the database
+DECLARE @Counter INT 
+SET @Counter=1
+WHILE ( @Counter <= 10000)
+BEGIN
+   SELECT 
+        RTRIM(a.Firstname) + ' ' + RTRIM(a.LastName)
+       , b.AddressLine1
+       , b.AddressLine2
+       , RTRIM(b.City) + ', ' + RTRIM(b.StateProvince) + '  ' + RTRIM(b.PostalCode)
+       , CountryRegion
+       FROM SalesLT.Customer a
+       INNER JOIN SalesLT.CustomerAddress c 
+           ON a.CustomerID = c.CustomerID
+       RIGHT OUTER JOIN SalesLT.Address b
+           ON b.AddressID = c.AddressID
+   ORDER BY a.LastName ASC
+   SET @Counter  = @Counter  + 1
+END
+
+-- Check the database in the Azure portal
+-- In the Intelligent Performance section, open Query Performance Insight
+-- click Reset
+-- click the query or wait 5 minutes and click refresh
+-- Reviewing the SQL text on the Query details page against the query you ran, you
+-- will note that the Query details only includes the SELECT statement and not the
+-- WHILE loop or other statement. This happens because Query Performance Insight 
+-- relies on data from the Query Store, which only tracks Data Manipulation Language
+-- (DML) statements such as SELECT, INSERT, UPDATE, DELETE, MERGE, and BULK INSERT
+-- while ignoring Data Definition Language (DDL) statements.
+
+
