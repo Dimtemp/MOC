@@ -1,3 +1,5 @@
+-- prereq: SQL VM with SSMS
+
 USE master
 GO
 

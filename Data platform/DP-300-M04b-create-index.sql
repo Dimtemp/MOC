@@ -1,3 +1,5 @@
+-- prereq: SQL VM with SSMS
+
 -- Create a table with a primary key
 CREATE TABLE dbo.PhoneLog
 ( PhoneLogID int IDENTITY(1,1) PRIMARY KEY,
@@ -23,6 +25,7 @@ GO
 -- You might want to change the value to retrieve actual results
 SELECT * FROM dbo.PhoneLog
 WHERE CallDurationSec = 991
+-- inspect the actual number of rows read: should be 10,000 as there is no index on the CallDurationSec column
 
 -- Create an index
 CREATE NONCLUSTERED INDEX MyIndex ON dbo.PhoneLog ( CallDurationSec ASC )
@@ -30,6 +33,7 @@ CREATE NONCLUSTERED INDEX MyIndex ON dbo.PhoneLog ( CallDurationSec ASC )
 -- Retrieve the data and inspect the execution plan
 SELECT * FROM dbo.PhoneLog
 WHERE CallDurationSec = 991
+-- inspect the actual number of rows read: should be much lower
 
 -- Drop the index
 DROP INDEX MyIndex ON dbo.PhoneLog

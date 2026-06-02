@@ -2,9 +2,10 @@ $DestDir = 'C:\AdventureWorks'
 $DBSource = 'https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak'
 $DBName = 'AdventureWorks2017.bak'
 $Query = "RESTORE DATABASE AdventureWorks2017 FROM DISK = '$(Join-Path $DestDir 'AdventureWorks2017.bak')' WITH MOVE 'AdventureWorks2017' TO '$(Join-Path $DestDir 'AdventureWorks2017.mdf')', MOVE 'AdventureWorks2017_Log' TO '$(Join-Path $DestDir 'AdventureWorks2017_log.ldf')';"
+#$GitSource = 'https://github.com/MicrosoftLearning/dp-300-database-administrator/archive/refs/heads/master.zip'
+#$GitDest = 'C:\AdventureWorks\dp300.zip'
 $Activity = 'preparing DP300 demo env'
-$GitSource = 'https://github.com/MicrosoftLearning/dp-300-database-administrator/archive/refs/heads/master.zip'
-$GitDest = 'C:\AdventureWorks\dp300.zip'
+Write-Host $Query
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12   # not required for w2019
 mkdir $DestDir
