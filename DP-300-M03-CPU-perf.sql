@@ -1,6 +1,7 @@
 -- Deploy an Azure SQL DB using the SAMPLE database.
 -- Prereq: SalesLT schema with Customer* and Address* tables.
 -- Best to run this query before starting the chapter.
+-- Optionally reduce the counter before starting the query to determine query runlength.
 
 -- Run this query 3 times against the database
 DECLARE @Counter INT 
