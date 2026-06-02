@@ -1,5 +1,6 @@
 -- Deploy an Azure SQL DB using the SAMPLE database.
 -- Prereq: SalesLT schema with Customer* and Address* tables.
+-- Best to run this query before starting the chapter.
 
 -- Run this query 3 times against the database
 DECLARE @Counter INT 
@@ -22,8 +23,7 @@ BEGIN
 END
 
 -- Check the database in the Azure portal
--- Open the Intelligent Performance section 
--- Open Query Performance Insight
+-- In the Intelligent Performance section, open Query Performance Insight
 -- click Reset
 -- click the query or wait 5 minutes and click refresh
 -- Reviewing the SQL text on the Query details page against the query you ran, you
