@@ -1,4 +1,5 @@
--- prereq: AdventureWorksLT database
+-- prereq: AdventureWorksLT database (sample DB from Azure SQL DB)
+-- Open the sample DB and enable dynamic data masking for the LastName column, the perform the following SQL script.
 
 SELECT TOP 10 FirstName, MiddleName, LastName
 FROM SalesLT.Customer;
