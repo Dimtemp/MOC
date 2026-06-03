@@ -1,25 +1,41 @@
-# this script measures time taken on a specific query
+<#
+.SYNOPSIS
+    Measures the time taken to execute a specific SQL query against a database, and repeats this process for a specified number of iterations.
+.EXAMPLE
+    .\Test-SQLQuerySpeed.ps1 -username 'Dimitri' -password 'Pa55w.rd' -FQDN 'tstsqldb4.database.windows.net' -database 'test' -query 'SELECT * FROM saleslt.customer'
+    This command will execute the specified SQL query against the database, measuring and displaying the time taken for each execution.
+#>
 
+[CmdletBinding()]
+param(
+    [string]
+    $username,
 
-# init
-$username = 'Dimitri'
-$password = 'Pa55w.rd'
-$FQDN = 'tst5333535.database.windows.net'
-$database = 'test'
-$query = 'SELECT * FROM saleslt.customer' # sys.databases
-$iterations = 1000
+    [string]
+    $password,
+
+    [string]
+    $FQDN,
+
+    [string]
+    $database,
+
+    [string]
+    $query = 'SELECT * FROM sys.databases',
+
+    [int]
+    $iterations = 1000
+)
 
 
 # setup
 $connectionString = "Server=$FQDN;Initial Catalog=$database"   # or use Integrated Security=true;
- 
-$securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
-$cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username, $securePassword   # Get-Credential
 
 # Create the SqlCredential object
+$securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
+$cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username, $securePassword   # Get-Credential
 $cred.Password.MakeReadOnly()
 $sqlCred = New-Object System.Data.SqlClient.SqlCredential($cred.username,$cred.password)
-
 
 # connect
 $sqlConn = New-Object System.Data.SqlClient.SqlConnection
@@ -29,7 +45,6 @@ $sqlConn.Open()
 
 $sqlcmd = $sqlConn.CreateCommand()
 $sqlcmd.CommandText = $query
-
 
 # get data
 $adp = New-Object System.Data.SqlClient.SqlDataAdapter $sqlcmd
