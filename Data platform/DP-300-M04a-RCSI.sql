@@ -45,7 +45,9 @@ SELECT * FROM TestTable
 -- second query waits while the first transaction is completed and only after that, returns the modified results
 
 
-ALTER DATABASE TestDB SET READ_COMMITTED_SNAPSHOT ON
+ALTER DATABASE TestDB
+SET READ_COMMITTED_SNAPSHOT ON
+WITH ROLLBACK IMMEDIATE;
 GO
 
 USE TestDB

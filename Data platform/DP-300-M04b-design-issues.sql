@@ -1,14 +1,22 @@
 USE AdventureWorks2017;
 
-SELECT * FROM HumanResources.Employee WHERE NationalIDNumber = 14417807
+SELECT * FROM HumanResources.Employee 
+WHERE NationalIDNumber = 14417807
 -- inspect the Execution Plan
 
-
-DROP INDEX [AK_Employee_NationalIDNumber] ON [HumanResources].[Employee];
+DROP INDEX [AK_Employee_NationalIDNumber] 
+ON [HumanResources].[Employee];
 GO
 
-ALTER TABLE [HumanResources].[Employee] ALTER COLUMN [NationalIDNumber] INT NOT NULL;
+ALTER TABLE [HumanResources].[Employee] 
+ALTER COLUMN [NationalIDNumber] INT NOT NULL;
 GO
 
-CREATE UNIQUE NONCLUSTERED INDEX [AK_Employee_NationalIDNumber] ON [HumanResources].[Employee] ( [NationalIDNumber] ASC);
+CREATE UNIQUE NONCLUSTERED INDEX [AK_Employee_NationalIDNumber] 
+ON [HumanResources].[Employee] ( [NationalIDNumber] ASC);
+GO
+
+-- optionally modify the table for the original data type
+ALTER TABLE [HumanResources].[Employee] 
+ALTER COLUMN [NationalIDNumber] NVARCHAR(200) NOT NULL;
 GO
