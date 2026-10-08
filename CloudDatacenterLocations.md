@@ -8,6 +8,8 @@ A listing of (suspect) cloud datacenters with their street address and/or Google
 | Europe | Ireland | Azure North Europe | 8GFW+V3 Lucan, County Dublin, Ireland | and/or Leopardstown, Dublin, Ireland |
 | Europe | Germany | Azure Germany? | 8GFW+V3 Wilhelm-Fay-Straße 15, 65936 Frankfurt am Main, Germany |  |
 | North America | United States | Azure US West 2 | 64Q8+H4 Quincy, Washington, United States |  |
+| North America | United States | Azure West US 3 (gov?) | HM86+4V, 12901 W Olive Ave, El Mirage, Arizona, United States |  |
+| North America | United States | Azure West US 3 (gov?) | CJ5M+C7, N Airport Way, Phoenix, Arizona, United States |  |
 | North America | United States | Azure US South Central | F8H3+HW San Antonio, Texas |  |
 | North America | United States | Azure US West Central | 44F2+VG F.E. Warren Air Force Base, Wyoming, Verenigde Staten | Wrong address?: 8120 Veta Drive, Cheyenne, WY 82009 |
 | North America | United States | Azure US North Central | 601 Northwest Avenue, Northlake, IL 60164 |  |
